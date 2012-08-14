@@ -1,4 +1,4 @@
-﻿Cordova.addConstructor(function () {
+﻿cordova.addConstructor(function () {
 
     console.log("Installing dateTimePicker");
 
@@ -29,7 +29,7 @@
                 return;
             }
 
-            Cordova.exec(function (res) {
+            cordova.exec(function (res) {
 
                 successCallback(new Date(res));
 
@@ -54,7 +54,7 @@
                 return;
             }
 
-            Cordova.exec(function (res) {
+            cordova.exec(function (res) {
 
                 successCallback(new Date(res));
 

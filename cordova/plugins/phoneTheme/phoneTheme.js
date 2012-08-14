@@ -1,4 +1,4 @@
-﻿Cordova.addConstructor(function () {
+﻿cordova.addConstructor(function () {
 
     navigator.plugins.phoneTheme = {
         get: function (successCallback, errorCallback, options) {
@@ -12,7 +12,7 @@
                 return;
             }
 
-            Cordova.exec(successCallback, errorCallback, "PhoneTheme", "get", options);
+            cordova.exec(successCallback, errorCallback, "PhoneTheme", "get", options);
         }        
     }
 });

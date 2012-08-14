@@ -5,23 +5,16 @@
  * Copyright (c) 2011-2012, Sergey Grebnov
  */
 
-using System.Runtime.Serialization;
-using WP7CordovaClassLib.Cordova;
-using WP7CordovaClassLib.Cordova.Commands;
-using WP7CordovaClassLib.Cordova.JSON;
-using Microsoft.Phone.Shell;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Phone.Controls;
+using System.Runtime.Serialization;
 using System.Windows;
-using Microsoft.Phone.Tasks;
 using System.Windows.Media;
+using CordovaClassLib = WP8CordovaClassLib;
 
 namespace Cordova.Extension.Commands
 {
 
-    public class PhoneTheme : BaseCommand
+    public class PhoneTheme : CordovaClassLib.Cordova.Commands.BaseCommand
     {
         #region Constants
 
@@ -69,18 +62,18 @@ namespace Cordova.Extension.Commands
 
                         themeInfo.AccentColor = this.ColorToHtmlHex((Color)Application.Current.Resources["PhoneAccentColor"]);
 
-                        DispatchCommandResult(new PluginResult(PluginResult.Status.OK, themeInfo));
+                        DispatchCommandResult(new CordovaClassLib.Cordova.PluginResult(CordovaClassLib.Cordova.PluginResult.Status.OK, themeInfo));
                     }
                     catch (Exception e)
                     {
-                        DispatchCommandResult(new PluginResult(PluginResult.Status.ERROR, e.Message));
+                        DispatchCommandResult(new CordovaClassLib.Cordova.PluginResult(CordovaClassLib.Cordova.PluginResult.Status.ERROR, e.Message));
                     }
 
                 });                                
             }
             catch (Exception e)
             {
-                DispatchCommandResult(new PluginResult(PluginResult.Status.ERROR, "Error occured while retrieving phone theme settings."));
+                DispatchCommandResult(new CordovaClassLib.Cordova.PluginResult(CordovaClassLib.Cordova.PluginResult.Status.ERROR, "Error occured while retrieving phone theme settings."));
             }
         }
 
