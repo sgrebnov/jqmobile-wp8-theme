@@ -1,7 +1,7 @@
-Cordova.addConstructor(function () {
+cordova.addConstructor(function () {
 
     console.log("Installing jqueryThemeSwitch");
-
+    
     navigator.plugins.jqueryThemeSwitch = {
 
         // expects {dark: true/false, accentColor: '#E51400'}
@@ -112,10 +112,10 @@ Cordova.addConstructor(function () {
 
         }
     };
-    // update the page as soon as it is ready
-    document.addEventListener("deviceready", function () {
-        console.log("jqueryThemeSwitch: device ready, apply current theme");
-        navigator.plugins.jqueryThemeSwitch.applyDeviceTheme();
-
-    }, false);
 });
+
+document.addEventListener('deviceready', function () {
+    console.log("jqueryThemeSwitch: device ready, apply current theme");
+    navigator.plugins.jqueryThemeSwitch.applyDeviceTheme();
+
+}, false);
