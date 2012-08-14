@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name = "format-detection" content = "telephone=no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
+        
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+
+        <link rel="stylesheet" href="themes/metro/jquery.mobile.metro.theme.css" />
+
+        <!--jqmobile references-->
+        <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery.mobile.js"></script>
+
+        <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        
+        <!--phonegap theme detection and switching pluings-->
+        <script type="text/javascript" charset="utf-8" src="js/phoneTheme.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery.cordova.metro.themeswitcher.js"></script>
+        <!--required for correct work of jquery.phonegap.metro.themeswitcher.js-->
+        <script type="text/javascript" charset="utf-8" src="js/jquery.globalstylesheet.js"></script>
+      
+      
+        <title>Hello Cordova</title>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1>Hello Cordova</h1>
+                <div id="welcomeMsg"></div>
+            </div>
+            <div data-role="content">
+                <input type="text" />
+                <input type="button" data-role="button" value="Test" />
+
+                <div data-role="fieldcontain">
+                    <label for="slider">Accent color:</label>
+                    <select name="slider" id="slider" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on" selected="true">On</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+              
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
