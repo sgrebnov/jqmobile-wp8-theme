@@ -37,12 +37,20 @@ function bodyMinHeightFix() {
 }
 
 $(document).ready(function(){
+    // disable transitions effects by default	
     $.mobile.defaultDialogTransition = 'none';
     $.mobile.defaultPageTransition = 'none';
 
-    if ($.browser.msie){
-        var version = parseInt($.browser.version);
-        $(document.body).addClass('ui-ie' + version);
-    bodyMinHeightFix();
+    if (!$.browser.msie){
+    	return;
     }
+    
+    // ie specific logic and fixes
+
+    $.mobile.pushStateEnabled = false;
+    
+    var version = parseInt($.browser.version);
+    $(document.body).addClass('ui-ie' + version);
+
+    bodyMinHeightFix();    
 });
