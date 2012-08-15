@@ -1549,9 +1549,21 @@ h1.ui-title {
 
 /* Fix for polyfill */
 @media screen and (device-height: 800px) and (orientation: portrait){
-    .ui-footer-fixed {
+    .ui-ie9 .ui-footer-fixed {
         margin-bottom: -33px;
     }
+}
+
+.ui-ie10 .ui-header-fixed,.ui-ie10 .ui-footer-fixed {
+    position: fixed !important;
+}
+
+.ui-ie10 .ui-footer-fixed {
+    bottom: 0px;
+}
+
+.ui-ie10 .ui-header-fixed {
+    top: 0px;
 }
 
 .ui-footer .ui-title {

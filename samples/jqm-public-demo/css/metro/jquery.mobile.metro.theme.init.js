@@ -12,7 +12,37 @@
  limitations under the License.
  */
 
+// special fix to have body content fit the entire browser area
+function bodyMinHeightFix() {
+    // portrait mode only
+    if(window.innerHeight <= window.innerWidth) return;
+
+    var zoomFactorW = document.body.clientWidth / screen.availWidth;
+
+    // default value (web browser app)
+    var addrBarH = 72;
+
+    // no app bar in web view control
+    if (typeof window.external.Notify !== "undefined") {
+        addrBarH = 0;
+    }
+
+    var divHeightInDoc = (screen.availHeight-addrBarH) * zoomFactorW;
+    //$("body")[0].style.minHeight = divHeightInDoc + 'px';
+
+    var page  = $("div[data-role='page']");
+    if (page.length > 0)
+        page[0].style.setProperty("min-height", divHeightInDoc + "px", 'important');
+
+}
+
 $(document).ready(function(){
     $.mobile.defaultDialogTransition = 'none';
     $.mobile.defaultPageTransition = 'none';
+
+    if ($.browser.msie){
+        var version = parseInt($.browser.version);
+        $(document.body).addClass('ui-ie' + version);
+        bodyMinHeightFix();
+    }
 });

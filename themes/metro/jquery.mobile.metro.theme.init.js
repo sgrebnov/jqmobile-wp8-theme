@@ -14,10 +14,6 @@
 
 // special fix to have body content fit the entire browser area
 function bodyMinHeightFix() {
-    var isWp7 = window.navigator.userAgent.indexOf("IEMobile/9.0") != -1;
-
-    if (!isWp7) return;
-
     // portrait mode only
     if(window.innerHeight <= window.innerWidth) return;
 
@@ -44,5 +40,9 @@ $(document).ready(function(){
     $.mobile.defaultDialogTransition = 'none';
     $.mobile.defaultPageTransition = 'none';
 
+    if ($.browser.msie){
+        var version = parseInt($.browser.version);
+        $(document.body).addClass('ui-ie' + version);
     bodyMinHeightFix();
+    }
 });

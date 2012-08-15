@@ -10,6 +10,11 @@ Application-bar
     z-index: 900;
 }
 
+.ui-ie10 .ui-app-bar {
+    position:fixed;
+    bottom:0px;
+}
+
 .ui-app-bar-a{
     background: #202020;
 }
