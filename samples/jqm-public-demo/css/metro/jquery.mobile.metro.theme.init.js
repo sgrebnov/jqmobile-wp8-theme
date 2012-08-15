@@ -51,6 +51,8 @@ $(document).ready(function(){
     
     var version = parseInt($.browser.version);
     $(document.body).addClass('ui-ie' + version);
-
-    bodyMinHeightFix();    
+	if(version < 10){
+    	bodyMinHeightFix();    
+	}
+    }
 });
