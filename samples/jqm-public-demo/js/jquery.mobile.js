@@ -1,4 +1,4 @@
-/*
+﻿/*
 * jQuery Mobile Framework Git Build: SHA1: d51c6fd1841c07ba74c6bdd9d2b8b3714416f948 <> Date: Mon Apr 9 07:37:19 2012 -0700
 * http://jquerymobile.com
 *
@@ -1302,7 +1302,7 @@ $.widget( "mobile.widget", {
 		//automatically initialize the DOM when it's ready
 		autoInitializePage: true,
 
-		pushStateEnabled: true,
+		pushStateEnabled: false,
 
 		// allows users to opt in to ignoring content by marking a parent element as
 		// data-ignored
