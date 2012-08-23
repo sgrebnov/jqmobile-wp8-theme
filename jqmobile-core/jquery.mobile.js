@@ -1,4 +1,4 @@
-﻿/*
+/*
 * jQuery Mobile Framework Git Build: SHA1: d51c6fd1841c07ba74c6bdd9d2b8b3714416f948 <> Date: Mon Apr 9 07:37:19 2012 -0700
 * http://jquerymobile.com
 *
@@ -1638,7 +1638,11 @@ function validStyle( prop, value, check_vend ) {
 			}
 		},
 		check_vends = check_vend ? [ check_vend ] : vendors,
-		ret;
+		ret = (function() {
+			var vend_prop = prop + ": " + value + ";";
+			div.setAttribute( "style", vend_prop );
+			return !!div.style[ prop ];
+		})();
 
 	for( i = 0; i < check_vends.length; i++ ) {
 		check_style( check_vends[i] );
@@ -2853,7 +2857,7 @@ $.mobile.transitionFallbacks = {};
 	//animation complete callback
 	$.fn.animationComplete = function( callback ) {
 		if( $.support.cssTransitions ) {
-			return $( this ).one( 'webkitAnimationEnd animationend', callback );
+			return $( this ).one( 'webkitAnimationEnd animationend MSAnimationEnd', callback );
 		}
 		else{
 			// defer execution for consistency between webkit/non webkit
