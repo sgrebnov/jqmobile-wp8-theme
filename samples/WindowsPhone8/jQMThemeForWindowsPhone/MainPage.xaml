@@ -38,7 +38,7 @@
         <my:CordovaView HorizontalAlignment="Stretch" 
                    Margin="0,0,0,0"  
                    x:Name="CordovaView" 
-                   StartPageUri="http://sgrebnov.github.com/jqmobile-wp-theme/samples/jqm-public-demo/index.html"                                  
+                   StartPageUri="http://sgrebnov.github.com/jqmobile-wp8-theme/samples/jqm-public-demo/index.html"                                  
                    VerticalAlignment="Stretch" />
         <Image Source="SplashScreenImage.jpg"
           x:Name="SplashImage"
