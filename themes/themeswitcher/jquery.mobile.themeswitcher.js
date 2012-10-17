@@ -79,7 +79,7 @@
         var theme = 'a';
 
         if (themeId !== 'Original') {
-            csspath = 'metro/jquery.mobile.metro.theme.css';
+            csspath = 'wp/jquery.mobile.wp.theme.css';
             if (themeId == 'Dark') {
                 theme = 'a';
             } else if (themeId == 'Light') {
