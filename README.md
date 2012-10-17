@@ -1,14 +1,14 @@
 # Welcome #
 
-This theme provides a Metro user interface for Cordova apps using jQuery Mobile on Windows Phone 7.5.
+This theme provides a Windows Phone user interface for Cordova apps using jQuery Mobile on Windows Phone 8.
 
 ### Live demo ###
 
-Web demo for the jquerymobile.com site
+Web demo
 
-http://sgrebnov.github.com/jqmobile-metro-theme/samples/jqm-public-demo/index.html
+http://sgrebnov.github.com/jqmobile-wp8-theme/samples/jqm-public-demo/index.html
 
-Windows Phone demo app
+Windows Phone 8 demo app
 
 http://windowsphone.com/s?appid=tbd
 
@@ -29,9 +29,9 @@ http://windowsphone.com/s?appid=tbd
 
 ### jQM theme for Windows Phone ##
 
-jQM theme for Windows Phone is presented by jquery.mobile.metro.theme.css file and related images folder.
+jQM theme for Windows Phone is presented by jquery.mobile.wp.theme.css file and related images folder.
 
-    /themes/metro/
+    /themes/wp/
 
 ### Additional plugins ###
 
@@ -60,20 +60,20 @@ backButtonHandler.js - hardware back button handling functionality
 
 dateTimePicker.js - js bridge for Cordova native DateTimePicker
 
-jquery.cordova.metro.themeswitcher.js - provides functionality to apply system colors (uses phoneTheme.js below)
+jquery.cordova.wp.themeswitcher.js - provides functionality to apply system colors (uses phoneTheme.js below)
 
 phoneTheme.js - js bridge for Cordova system colors detection plugin
 
 ### Samples ###
 
-Demo pages for the jquerymobile.com site reference (official demo for other developers).
+Official demo for other developers.
 
     /samples/jqm-public-demo/index.html
 
 Windows Phone application based on Cordova framework to demonstrate all theme functionality (system colors, native UI elements).
 Does not contain any html pages inside, it uses absolute reference to test pages (see next section) located remotly.
 
-    /samples/WindowsPhone/MetroThemeDemoApp
+    /samples/WindowsPhone8/jQMThemeForWindowsPhone
 
 ### Test pages ###
 
@@ -89,7 +89,7 @@ Note. Pages above are used as a reference for Windows Phone demo application.
 
 ## Prerequisite ##
 The following componets are required for optimal theme work
-Cordova App on Windows Phone 7.5
+Cordova App on Windows Phone 8
 Silverlight for Windows Phone Toolkit
 http://silverlight.codeplex.com/releases/view/71550#DownloadId=270984
 
@@ -112,8 +112,8 @@ http://silverlight.codeplex.com/releases/view/71550#DownloadId=270984
     /tests/basic/gallery/html/forms-all.html
 
 ### To build Windows Phone demo app ###
-1. Open the following solution in Visual Studio
-    /samples/WindowsPhone/MetroThemeDemoApp/MetroThemeDemoApp.sln
+1. Open the following solution in Visual Studio 2012 or above
+    /samples/WindowsPhone8/jQMThemeForWindowsPhone/jQMThemeForWindowsPhone.sln
 2. Update CordovaView.StartPageUri (MainPage.xaml) to reference to /tests/basic/gallery/html/forms-all.html located remotly.
 3. Build
 
