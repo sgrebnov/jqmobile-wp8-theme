@@ -181,6 +181,27 @@ textarea.ui-input-text.ui-body-a[disabled="disabled"]{
 /*
 Checkbox and radio button
 */
+
+.ui-checkbox .ui-btn-up-a .ui-icon-checkbox-on,
+.ui-checkbox .ui-btn-down-a .ui-icon-checkbox-on,
+.ui-checkbox .ui-btn-hover-a .ui-icon-checkbox-on{
+    background-image: url('images/check-white.png');
+}
+
+.ui-radio .ui-btn-up-a .ui-icon-radio-on,
+.ui-radio .ui-btn-down-a .ui-icon-radio-on,
+.ui-radio .ui-btn-hover-a .ui-icon-radio-on{
+    background-image: url('images/radiobtn-white.png');
+}
+
+.ui-checkbox .ui-btn-up-a .ui-icon,
+.ui-checkbox .ui-btn-down-a .ui-icon,
+.ui-radion .ui-btn-up-a .ui-icon,
+.ui-radio .ui-btn-down-a .ui-icon
+.ui-radio .ui-icon{
+    border-color: white;
+}
+
 .ui-checkbox.ui-disabled .ui-btn-up-a .ui-icon, .ui-radio.ui-disabled .ui-btn-up-a .ui-icon,
 .ui-checkbox.ui-disabled .ui-btn-hover-a .ui-icon, .ui-radio.ui-disabled .ui-btn-hover-a .ui-icon{
     background-color: #808080;
@@ -386,12 +407,34 @@ textarea.ui-input-text.ui-body-b[disabled="disabled"]{
 Checkbox and radio button
 */
 
+.ui-checkbox .ui-btn-up-b .ui-icon-checkbox-on,
+.ui-checkbox .ui-btn-down-b .ui-icon-checkbox-on,
+.ui-checkbox .ui-btn-hover-b .ui-icon-checkbox-on{
+    background-image: url('images/check-black.png');
+}
+
+
+.ui-radio .ui-btn-up-b .ui-icon-radio-on,
+.ui-radio .ui-btn-down-b .ui-icon-radio-on,
+.ui-radio .ui-btn-hover-b .ui-icon-radio-on{
+    background-image: url('images/radiobtn-black.png');
+}
+
+
+.ui-checkbox .ui-btn-up-b .ui-icon,
+.ui-checkbox .ui-btn-down-b .ui-icon,
+.ui-radion .ui-btn-up-b .ui-icon,
+.ui-radio .ui-btn-down-b .ui-icon
+.ui-radio .ui-icon{
+    border-color: black;
+}
+
 .ui-checkbox.ui-disabled .ui-btn-up-b .ui-icon,.ui-radio.ui-disabled .ui-btn-up-b .ui-icon,
 .ui-checkbox.ui-disabled .ui-btn-hover-b .ui-icon,.ui-radio.ui-disabled .ui-btn-hover-b .ui-icon{
     background-color: white;
     border: 2px solid #808080;
-    height: 17px;
-    width: 17px;
+    height: 20px;
+    width: 20px;
 }
 
 /*
@@ -803,8 +846,8 @@ Checkbox and radio button
 .ui-checkbox.ui-disabled .ui-btn-hover-d .ui-icon,.ui-radio.ui-disabled .ui-btn-hover-d .ui-icon{
     background-color: white;
     border: 2px solid #808080;
-    height: 17px;
-    width: 17px;
+    height: 20px;
+    width: 20px;
 }
 
 /*
@@ -1344,6 +1387,25 @@ a.ui-link-inherit {
     background-position: 	-607px 50%;
 }
 
+.ui-checkbox .ui-icon,
+.ui-radio .ui-icon{
+    border: 2px solid;
+    background-color: transparent;
+}
+
+.ui-checkbox:not(.ui-disabled) .ui-icon:active,
+.ui-radio:not(.ui-disabled) .ui-icon:active,
+.ui-checkbox:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon,
+.ui-radio:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon,
+.ui-checkbox:not(.ui-disabled):active .ui-icon,
+.ui-radio:not(.ui-disabled):active .ui-icon,
+.ui-checkbox:not(.ui-disabled) .ui-btn:active .ui-icon,
+.ui-radio:not(.ui-disabled) .ui-btn:active .ui-icon,
+.ui-checkbox:not(.ui-disabled) .ui-btn-inner:active .ui-icon,
+.ui-radio:not(.ui-disabled) .ui-btn-inner:active .ui-icon{
+    background-color: #1BA1E2;
+}
+
 .ui-icon-checkbox-off,
 .ui-controlgroup-horizontal .ui-checkbox .ui-btn.ui-checkbox-off .ui-btn-inner
 {
@@ -1352,8 +1414,7 @@ a.ui-link-inherit {
 }
 .ui-icon-checkbox-on,
 .ui-controlgroup-horizontal .ui-checkbox .ui-btn.ui-checkbox-on .ui-btn-inner{
-    background-image: url(images/checkbox.png);
-    background-size: 18px 15px;
+    background-size: 30px 30px;
     background-position: 	50% 50%;
 
 }
@@ -1364,17 +1425,21 @@ a.ui-link-inherit {
 }
 .ui-icon-radio-on,
 .ui-controlgroup-horizontal .ui-radio .ui-btn.ui-radio-on .ui-btn-inner{
-    background-image: url(images/radiobtn.png);
     background-size: 10px 10px;
     background-position: 	50% 50%;
 }
 
-.ui-disabled .ui-icon-checkbox-on{
-    background-image: url(images/checkbox-disabled.png);
+.ui-checkbox.ui-disabled .ui-icon-checkbox-on{
+    background-image: url(images/checkbox-disabled.png) !important;
 }
 
-.ui-disabled .ui-icon-radio-on{
-    background-image: url(images/radiobtn-disabled.png);
+.ui-radio.ui-disabled .ui-icon-radio-on{
+    background-image: url(images/radiobtn-disabled.png) !important;
+}
+
+.ui-checkbox.ui-disabled input,
+.ui-radio.ui-disabled input{
+    visibility: collapse;
 }
 
 /* checks,radios */
@@ -1382,8 +1447,8 @@ a.ui-link-inherit {
 .ui-controlgroup-horizontal .ui-checkbox .ui-btn .ui-btn-inner,
 .ui-controlgroup-horizontal .ui-radio .ui-btn .ui-btn-inner{
     border-radius: 0px;
-    height: 21px;
-    width: 21px;
+    height: 20px;
+    width: 20px;
     left: 0px !important;
     box-shadow: none;
     background-repeat: no-repeat;
@@ -1397,7 +1462,7 @@ a.ui-link-inherit {
 
 .ui-radio .ui-icon,
 .ui-controlgroup-horizontal .ui-radio .ui-btn .ui-btn-inner{
-    border-radius: .6em !important;
+    border-radius: 2em !important;
 }
 
 .ui-icon-checkbox-off,.ui-icon-radio-off,
@@ -1405,7 +1470,7 @@ a.ui-link-inherit {
 .ui-controlgroup-horizontal .ui-checkbox .ui-btn .ui-btn-inner,
 .ui-controlgroup-horizontal .ui-radio .ui-btn .ui-btn-inner
 {
-    background-color: #cccccc;
+    background-color: transparent;
 }
 
 /* loading icon */
@@ -2897,6 +2962,13 @@ Checkbox and radio button
     font-weight: normal;
 }
 
+.ui-checkbox .ui-btn-down-a,
+.ui-checkbox .ui-btn-down-b,
+.ui-radio .ui-btn-down-a,
+.ui-radio .ui-btn-down-b{
+    background-color: transparent !important;
+}
+
 .ui-checkbox .ui-btn-inner, .ui-radio .ui-btn-inner { white-space: normal; }
 .ui-checkbox .ui-btn-icon-left .ui-btn-inner,.ui-radio .ui-btn-icon-left .ui-btn-inner { padding-left: 45px; }
 .ui-checkbox .ui-btn-icon-right .ui-btn-inner, .ui-radio .ui-btn-icon-right .ui-btn-inner { padding-right: 45px; }
@@ -2920,6 +2992,7 @@ Checkbox and radio button
 
 .ui-checkbox .ui-btn-text, .ui-radio .ui-btn-text{
     margin-left: -15px;
+    line-height: 1.7em;
 }
 
 .ui-checkbox .ui-btn-icon-left .ui-icon, .ui-radio .ui-btn-icon-left .ui-icon {left: 15px; }
@@ -2929,6 +3002,12 @@ Checkbox and radio button
 
 .ui-checkbox.ui-disabled .ui-btn .ui-btn-text, .ui-radio.ui-disabled .ui-btn .ui-btn-text{
     color: #808080;
+}
+
+.ui-checkbox.ui-disabled .ui-icon,
+.ui-radio.ui-disabled .ui-icon{
+    background-color: transparent !important;
+    border-color: #808080;
 }
 
 /*
