@@ -125,13 +125,6 @@ body.ui-overlay-a {
     color: white;
 }
 
-input.ui-body-a[type="text"]:focus,
-input.ui-body-a[type="text"]:active,
-textarea.ui-body-a:focus,
-textarea.ui-body-a:active {
-    border-color: white;
-}
-
 input.ui-input-text.ui-body-a[disabled="disabled"],
 textarea.ui-input-text.ui-body-a[disabled="disabled"]{
     background-color: black ;
@@ -333,13 +326,6 @@ body.ui-overlay-b{
 .ui-dialog.ui-overlay-b {
     background: white;
     color: black;
-}
-
-input.ui-body-b[type="text"]:focus,
-input.ui-body-b[type="text"]:active,
-textarea.ui-body-b:focus,
-textarea.ui-body-b:active {
-    border-color: black;
 }
 
 input.ui-input-text.ui-body-b[disabled="disabled"],
@@ -553,13 +539,6 @@ body.ui-overlay-c {
     color: white;
 }
 
-input.ui-body-c[type="text"]:focus,
-input.ui-body-c[type="text"]:active,
-textarea.ui-body-c:focus,
-textarea.ui-body-c:active {
-    border-color: white;
-}
-
 input.ui-input-text.ui-body-c[disabled="disabled"],
 textarea.ui-input-text.ui-body-c[disabled="disabled"]{
     background-color: black ;
@@ -760,13 +739,6 @@ body.ui-overlay-d{
 .ui-dialog.ui-overlay-d {
     background: white;
     color: black;
-}
-
-input.ui-body-d[type="text"]:focus,
-input.ui-body-d[type="text"]:active,
-textarea.ui-body-d:focus,
-textarea.ui-body-d:active {
-    border-color: black;
 }
 
 input.ui-input-text.ui-body-d[disabled="disabled"],
@@ -3105,7 +3077,7 @@ input.ui-input-text, textarea.ui-input-text {
     width: 100%;
     background-color: #BFBFBF;
     border-radius: 0;
-    border: 1px solid #BFBFBF;
+    border: 2px solid #BFBFBF;
     color: #3e3e3e;
     box-shadow: none;
 }
@@ -3115,8 +3087,9 @@ textarea.ui-input-text { height: 50px; transition: height 200ms linear; }
 input[type="text"]:focus,
 input[type="text"]:active,
 textarea:focus,
-textarea:active {
-    border: 1px solid;
+textarea:active,
+.ui-input-search.ui-focus{
+    border: 2px solid #1BA1E2;
 }
 
 input.ui-input-text[disabled="disabled"],
@@ -3142,10 +3115,6 @@ textarea.ui-input-text[disabled="disabled"]{
 .ui-input-search{
     border-radius: 0px;
     background-color: #bfbfbf;
-}
-
-.ui-input-search.ui-focus{
-    border: 2px solid #666666;
 }
 
 .ui-input-search.ui-focus input.ui-input-text{
