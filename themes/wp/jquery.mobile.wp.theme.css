@@ -1090,11 +1090,11 @@ input, select, textarea, button {
     text-decoration: none;
 }
 
-.ui-btn-down-a:not(.ui-slider),
-.ui-btn-down-b:not(.ui-slider),
-.ui-btn-down-c:not(.ui-slider),
-.ui-btn-down-d:not(.ui-slider),
-.ui-btn-down-e:not(.ui-slider){
+.ui-btn-down-a:not(.ui-slider):not([disabled]),
+.ui-btn-down-b:not(.ui-slider):not([disabled]),
+.ui-btn-down-c:not(.ui-slider):not([disabled]),
+.ui-btn-down-d:not(.ui-slider):not([disabled]),
+.ui-btn-down-e:not(.ui-slider):not([disabled]){
     background-color: #1BA1E2;
 }
 
