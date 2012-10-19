@@ -175,8 +175,7 @@ textarea.ui-input-text.ui-body-a[disabled="disabled"]{
 }
 .ui-btn-down-a[data-role="button"] {
     border-color: white /*{a-bdown-border}*/;
-    background: white /*{a-bdown-background-color}*/;
-    color: black /*{a-bdown-color}*/;
+    color: white /*{a-bdown-color}*/;
 }
 .ui-btn-down-a a.ui-link-inherit {
     color: white /*{a-bdown-color}*/;
@@ -387,8 +386,7 @@ textarea.ui-input-text.ui-body-b[disabled="disabled"]{
 }
 .ui-btn-down-b[data-role="button"] {
     border-color: black /*{b-bdown-border}*/;
-    background: black /*{b-bdown-background-color}*/;
-    color: white /*{b-bdown-color}*/;
+    color: black /*{b-bdown-color}*/;
 }
 .ui-btn-down-b a.ui-link-inherit {
     color: black /*{b-bdown-color}*/;
@@ -605,8 +603,7 @@ textarea.ui-input-text.ui-body-c[disabled="disabled"]{
 }
 .ui-btn-down-c[data-role="button"] {
     border-color: white /*{a-bdown-border}*/;
-    background: white /*{a-bdown-background-color}*/;
-    color: black /*{a-bdown-color}*/;
+    color: white /*{a-bdown-color}*/;
 }
 .ui-btn-down-c a.ui-link-inherit {
     color: white /*{a-bdown-color}*/;
@@ -816,8 +813,7 @@ textarea.ui-input-text.ui-body-d[disabled="disabled"]{
 }
 .ui-btn-down-d[data-role="button"] {
     border-color: black /*{b-bdown-border}*/;
-    background: black /*{b-bdown-background-color}*/;
-    color: white /*{b-bdown-color}*/;
+    color: black /*{b-bdown-color}*/;
 }
 .ui-btn-down-d a.ui-link-inherit {
     color: black /*{b-bdown-color}*/;
@@ -1031,7 +1027,6 @@ Footer
 }
 .ui-btn-down-e {
     border: 1px solid 		#F7C942 /*{e-bdown-border}*/;
-    background: 			#fceda7 /*{e-bdown-background-color}*/;
     font-weight: bold;
     color: 					#111 /*{e-bdown-color}*/;
 }
@@ -1062,6 +1057,14 @@ input, select, textarea, button {
     border: 2px solid;
     font-weight: bold;
     text-decoration: none;
+}
+
+.ui-btn-down-a:not(.ui-slider),
+.ui-btn-down-b:not(.ui-slider),
+.ui-btn-down-c:not(.ui-slider),
+.ui-btn-down-d:not(.ui-slider),
+.ui-btn-down-e:not(.ui-slider){
+    background-color: #1BA1E2;
 }
 
 .ui-btn[disabled="disabled"] {
