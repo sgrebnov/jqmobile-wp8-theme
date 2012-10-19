@@ -3017,7 +3017,7 @@ Checkbox and radio button
     line-height: 1.7em;
 }
 
-.ui-controlgroup-horizontal .ui-checkbox .ui-btn-text, .ui-radio .ui-btn-text{
+.ui-controlgroup-horizontal .ui-checkbox .ui-btn-text, .ui-controlgroup-horizontal .ui-radio .ui-btn-text{
     line-height: normal;
 }
 
