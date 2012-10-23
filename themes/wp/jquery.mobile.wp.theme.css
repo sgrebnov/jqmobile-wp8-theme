@@ -314,6 +314,10 @@ Footer
     color: white;
 }
 
+.ui-body-a.ui-selectmenu,
+.ui-body-a.ui-selectmenu div {
+    background-color: #202020;
+}
 
 /* B
 -----------------------------------------------------------------------------------------------------------*/
@@ -552,6 +556,11 @@ Footer
 
 .ui-footer.ui-bar-b{
     background-color: #cccccc;
+}
+
+.ui-body-b.ui-selectmenu,
+.ui-body-b.ui-selectmenu div {
+    background-color: #bfbfbf;
 }
 
 /* C
@@ -3121,6 +3130,7 @@ Dropbox (custom selectmenu)
     z-index: 1100 !important;
     width: 100%;
     height: 100%;
+    border-radius: 0 !important;
 }
 .ui-selectmenu .ui-listview { margin: 0; }
 .ui-selectmenu .ui-btn.ui-li-divider { cursor: default; }
@@ -3169,7 +3179,7 @@ Dropbox (custom selectmenu)
 }
 
 .ui-li.ui-selectmenu-placeholder { display: none; }
-.ui-selectmenu .ui-header .ui-title { margin: 0.6em 46px 0.8em; }
+.ui-selectmenu .ui-header .ui-title { margin: 0.6em 0px 0.8em; }
 
 @media all and (min-width: 450px){
     .ui-field-contain label.ui-select { vertical-align: top;  display: inline-block;  width: 20%;  margin: 0 2% 0 0; }
@@ -3605,6 +3615,17 @@ span.ui-slider-label-b {
 .ui-popup-container .ui-content > h6:last-child {
 	margin-bottom: 0;
 }
+
+.ui-popup-active{
+    width: 100% !important;
+    height: auto !important;
+    min-height: 480px;
+    left: 0 !important;
+    position: fixed;
+    top: 0 !important;
+    max-width: 100% !important;
+}
+
 .ui-popup > img {
 	width: auto;
 	height: auto;
