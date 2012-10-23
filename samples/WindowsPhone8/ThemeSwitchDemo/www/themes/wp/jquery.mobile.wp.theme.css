@@ -1091,8 +1091,16 @@ input, select, textarea, button {
 }
 
 .ui-btn-down-a:not(.ui-disabled)[data-role='button'],
-.ui-btn-down-b:not(.ui-disabled)[data-role='button']{
+.ui-btn-down-b:not(.ui-disabled)[data-role='button'],
+.ui-btn-down-a:not(.ui-disabled) input[data-role='button'],
+.ui-btn-down-b:not(.ui-disabled) input[data-role='button']{
     background-color: #1BA1E2;
+}
+
+.ui-btn-down-a:not(.ui-disabled) input[data-role='button'],
+.ui-btn-down-b:not(.ui-disabled) input[data-role='button']{
+    opacity: 1;
+    z-index: 0;
 }
 
 .ui-btn[disabled="disabled"] {

@@ -163,7 +163,9 @@
             $(".ui-progress-bg").globalcss('background-color', accentColor + ' !important');
             $(".ui-progress-value").globalcss('background-color', accentColor + ' !important');
             $(".ui-btn-down-a:not(.ui-disabled)[data-role='button'], "+
-                ".ui-btn-down-b:not(.ui-disabled)[data-role='button']").globalcss('background-color', accentColor + ' !important');
+                ".ui-btn-down-b:not(.ui-disabled)[data-role='button'], "+
+                ".ui-btn-down-a:not(.ui-disabled) input[data-role='button'], "+
+                ".ui-btn-down-b:not(.ui-disabled) input[data-role='button']").globalcss('background-color', accentColor + ' !important');
             $("input[type='text'].ui-focus, textarea.ui-focus, .ui-input-search.ui-focus").globalcss('border-color', accentColor + ' !important');
             $(".ui-checkbox:not(.ui-disabled) .ui-icon:active, .ui-radio:not(.ui-disabled) .ui-icon:active, "+
                 ".ui-checkbox:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon, .ui-radio:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon,"+
