@@ -1090,11 +1090,8 @@ input, select, textarea, button {
     text-decoration: none;
 }
 
-.ui-btn-down-a:not(.ui-slider):not([disabled]),
-.ui-btn-down-b:not(.ui-slider):not([disabled]),
-.ui-btn-down-c:not(.ui-slider):not([disabled]),
-.ui-btn-down-d:not(.ui-slider):not([disabled]),
-.ui-btn-down-e:not(.ui-slider):not([disabled]){
+.ui-btn-down-a:not(.ui-disabled)[data-role='button'],
+.ui-btn-down-b:not(.ui-disabled)[data-role='button']{
     background-color: #1BA1E2;
 }
 
@@ -1421,8 +1418,8 @@ a.ui-link-inherit {
 .ui-radio:not(.ui-disabled) .ui-btn:active .ui-icon,
 .ui-checkbox:not(.ui-disabled) .ui-btn-inner:active .ui-icon,
 .ui-radio:not(.ui-disabled) .ui-btn-inner:active .ui-icon,
-.ui-controlgroup-horizontal .ui-checkbox .ui-btn .ui-btn-inner:active,
-.ui-controlgroup-horizontal .ui-radio .ui-btn .ui-btn-inner:active{
+.ui-controlgroup-horizontal .ui-checkbox:not(.ui-disabled) .ui-btn .ui-btn-inner:active,
+.ui-controlgroup-horizontal .ui-radio:not(.ui-disabled) .ui-btn .ui-btn-inner:active{
     background-color: #1BA1E2;
 }
 
