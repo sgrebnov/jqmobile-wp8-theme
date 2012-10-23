@@ -4,8 +4,8 @@ Application-bar
 */
 
 .ui-app-bar {
-    position:absolute;
-    bottom:-10px;
+    position:fixed;
+    bottom:0px;
     width:100%;
     z-index: 900;
 }
