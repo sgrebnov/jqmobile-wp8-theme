@@ -63,10 +63,20 @@ cordova.addConstructor(function () {
                 $(".ui-btn-active a.ui-link-inherit").globalcss('color', theme.accentColor + ' !important');
                 $(".ui-selectmenu-list li[aria-selected='true'] .ui-btn-text a").globalcss('color', theme.accentColor + ' !important');
                 $(".ui-li-divider").globalcss('background-color', theme.accentColor + ' !important');
-                $("div.ui-slider:not(.ui-disabled):not(.ui-slider-switch)").globalcss('background-color', theme.accentColor + ' !important');
+                $("div.ui-slider:not(.ui-disabled):not(.ui-slider-switch):before").globalcss('background-color', theme.accentColor + ' !important');
                 $("div.ui-slider-switch span.ui-slider-label-a").globalcss('background-color', theme.accentColor + ' !important');
                 $(".ui-progress-bg").globalcss('background-color', theme.accentColor + ' !important');
                 $(".ui-progress-value").globalcss('background-color', theme.accentColor + ' !important');
+                $(".ui-btn-down-a:not(.ui-disabled)[data-role='button'], "+
+                    ".ui-btn-down-b:not(.ui-disabled)[data-role='button']").globalcss('background-color', theme.accentColor + ' !important');
+                $("input[type='text'].ui-focus, textarea.ui-focus, .ui-input-search.ui-focus").globalcss('border-color', theme.accentColor + ' !important');
+                $(".ui-checkbox:not(.ui-disabled) .ui-icon:active, .ui-radio:not(.ui-disabled) .ui-icon:active, "+
+                    ".ui-checkbox:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon, .ui-radio:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon,"+
+                    ".ui-checkbox:not(.ui-disabled):active .ui-icon, .ui-radio:not(.ui-disabled):active .ui-icon,"+
+                    ".ui-checkbox:not(.ui-disabled) .ui-btn:active .ui-icon, .ui-radio:not(.ui-disabled) .ui-btn:active .ui-icon,"+
+                    ".ui-checkbox:not(.ui-disabled) .ui-btn-inner:active .ui-icon, .ui-radio:not(.ui-disabled) .ui-btn-inner:active .ui-icon,"+
+                    ".ui-controlgroup-horizontal .ui-checkbox:not(.ui-disabled) .ui-btn .ui-btn-inner:active,"+
+                    ".ui-controlgroup-horizontal .ui-radio:not(.ui-disabled) .ui-btn .ui-btn-inner:active").globalcss('background-color', theme.accentColor + ' !important');
             }
             catch (ex) {
                 if (errorCallback)

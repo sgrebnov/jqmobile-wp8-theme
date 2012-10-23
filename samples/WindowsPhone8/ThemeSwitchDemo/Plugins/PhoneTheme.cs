@@ -9,7 +9,7 @@ using System;
 using System.Runtime.Serialization;
 using System.Windows;
 using System.Windows.Media;
-using CordovaClassLib = WP8CordovaClassLib;
+using CordovaClassLib = WPCordovaClassLib;
 
 namespace Cordova.Extension.Commands
 {

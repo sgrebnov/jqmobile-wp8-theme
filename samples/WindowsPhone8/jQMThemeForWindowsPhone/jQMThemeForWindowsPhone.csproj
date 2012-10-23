@@ -144,7 +144,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CordovaLib\WP8CordovaClassLib.dll" />
+    <Content Include="CordovaLib\WPCordovaClassLib.dll" />
     <Content Include="CordovaSourceDictionary.xml" />
     <Content Include="www\readme.txt" />
     <None Include="BuildManifestProcessor.js" />
@@ -172,9 +172,7 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
-    <Reference Include="WP8CordovaClassLib">
-      <HintPath>CordovaLib\WP8CordovaClassLib.dll</HintPath>
-    </Reference>
+    <Reference Include="WPCordovaClassLib, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

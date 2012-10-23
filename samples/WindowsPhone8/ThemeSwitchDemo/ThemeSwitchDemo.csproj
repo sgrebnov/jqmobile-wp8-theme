@@ -142,8 +142,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CordovaLib\WP8CordovaClassLib.dll" />
+    <Content Include="CordovaLib\WPCordovaClassLib.dll" />
     <Content Include="CordovaSourceDictionary.xml" />
+    <Content Include="www\cordova-2.2.0.js" />
     <Content Include="www\js\index.js" />
     <Content Include="www\js\jquery.cordova.wp.themeswitcher.js" />
     <Content Include="www\js\jquery.globalstylesheet.js" />
@@ -151,18 +152,19 @@
     <Content Include="www\js\jquery.mobile.js" />
     <Content Include="www\js\phoneTheme.js" />
     <Content Include="www\themes\wp\images\ajax-loader.png" />
+    <Content Include="www\themes\wp\images\check-black.png" />
+    <Content Include="www\themes\wp\images\check-white.png" />
     <Content Include="www\themes\wp\images\checkbox-disabled.png" />
-    <Content Include="www\themes\wp\images\checkbox.png" />
     <Content Include="www\themes\wp\images\icons-18-black.png" />
     <Content Include="www\themes\wp\images\icons-18-white.png" />
     <Content Include="www\themes\wp\images\icons-36-black.png" />
     <Content Include="www\themes\wp\images\icons-36-white.png" />
+    <Content Include="www\themes\wp\images\radiobtn-black.png" />
     <Content Include="www\themes\wp\images\radiobtn-disabled.png" />
-    <Content Include="www\themes\wp\images\radiobtn.png" />
-    <Resource Include="www\themes\wp\images\wait-indicator.gif" />
+    <Content Include="www\themes\wp\images\wait-indicator.gif" />
+    <Content Include="www\themes\wp\images\radiobtn-white.png" />
     <Content Include="www\themes\wp\jquery.mobile.wp.theme.css" />
     <None Include="BuildManifestProcessor.js" />
-    <Content Include="www\cordova-2.0.0.js" />
     <Content Include="www\css\index.css" />
     <Content Include="www\img\cordova.png" />
     <Content Include="www\index.html">
@@ -194,9 +196,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="WP8CordovaClassLib">
-      <HintPath>CordovaLib\WP8CordovaClassLib.dll</HintPath>
-    </Reference>
+    <Reference Include="WPCordovaClassLib, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

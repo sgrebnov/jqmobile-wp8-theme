@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This file is auto-generated, do not edit! -jm -->
 <CordovaSourceDictionary>
+    <FilePath Value="www\cordova-2.2.0.js"/>
     <FilePath Value="www\js\index.js"/>
     <FilePath Value="www\js\jquery.cordova.wp.themeswitcher.js"/>
     <FilePath Value="www\js\jquery.globalstylesheet.js"/>
@@ -8,16 +9,18 @@
     <FilePath Value="www\js\jquery.mobile.js"/>
     <FilePath Value="www\js\phoneTheme.js"/>
     <FilePath Value="www\themes\wp\images\ajax-loader.png"/>
+    <FilePath Value="www\themes\wp\images\check-black.png"/>
+    <FilePath Value="www\themes\wp\images\check-white.png"/>
     <FilePath Value="www\themes\wp\images\checkbox-disabled.png"/>
-    <FilePath Value="www\themes\wp\images\checkbox.png"/>
     <FilePath Value="www\themes\wp\images\icons-18-black.png"/>
     <FilePath Value="www\themes\wp\images\icons-18-white.png"/>
     <FilePath Value="www\themes\wp\images\icons-36-black.png"/>
     <FilePath Value="www\themes\wp\images\icons-36-white.png"/>
+    <FilePath Value="www\themes\wp\images\radiobtn-black.png"/>
     <FilePath Value="www\themes\wp\images\radiobtn-disabled.png"/>
-    <FilePath Value="www\themes\wp\images\radiobtn.png"/>
+    <FilePath Value="www\themes\wp\images\wait-indicator.gif"/>
+    <FilePath Value="www\themes\wp\images\radiobtn-white.png"/>
     <FilePath Value="www\themes\wp\jquery.mobile.wp.theme.css"/>
-    <FilePath Value="www\cordova-2.0.0.js"/>
     <FilePath Value="www\css\index.css"/>
     <FilePath Value="www\img\cordova.png"/>
     <FilePath Value="www\index.html"/>

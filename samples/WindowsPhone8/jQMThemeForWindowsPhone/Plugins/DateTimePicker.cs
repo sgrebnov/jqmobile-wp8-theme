@@ -8,7 +8,7 @@
 using System;
 using System.Runtime.Serialization;
 using Microsoft.Phone.Tasks;
-using CordovaClassLib = WP8CordovaClassLib;
+using CordovaClassLib = WPCordovaClassLib;
 
 namespace Cordova.Extension.Commands
 {
