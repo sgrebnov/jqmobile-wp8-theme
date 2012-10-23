@@ -12,7 +12,7 @@
                 return;
             }
 
-            cordova.exec(successCallback, errorCallback, "PhoneTheme", "get", options);
+            cordova.exec(successCallback, errorCallback, "PhoneTheme", "get", [options]);
         }        
     }
 });
