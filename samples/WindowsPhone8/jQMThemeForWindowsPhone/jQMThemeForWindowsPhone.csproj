@@ -146,6 +146,8 @@
   <ItemGroup>
     <Content Include="CordovaLib\WPCordovaClassLib.dll" />
     <Content Include="CordovaSourceDictionary.xml" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="www\readme.txt" />
     <None Include="BuildManifestProcessor.js" />
     <None Include="cordova\debug.bat" />
