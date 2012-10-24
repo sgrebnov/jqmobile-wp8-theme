@@ -100,7 +100,7 @@
         $.themesDir = 'css/';
 
         $().ready( function() {
-            if (!window.external.Notify || !$.browser.msie || parseInt($.browser.version) < 10) {
+            if ((typeof window.external.Notify == "undefined") || !$.browser.msie || parseInt($.browser.version) < 10) {
                 $("#noteWP8Required").show();
             }
 
