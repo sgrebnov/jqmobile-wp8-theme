@@ -116,3 +116,21 @@ http://silverlight.codeplex.com/releases/view/71550#DownloadId=270984
     /samples/WindowsPhone8/jQMThemeForWindowsPhone/jQMThemeForWindowsPhone.sln
 2. Update CordovaView.StartPageUri (MainPage.xaml) to reference to /tests/basic/gallery/html/forms-all.html located remotly.
 3. Build
+
+# Nuget packages for Visual Studio #
+
+<a href="https://www.nuget.org/packages/jQMThemeForWindowsPhone8">jQMThemeForWindowsPhone8</a>
+
+This nuget package allows developers to apply a Windows Phone style look and feel to Windows Phone HTML5 applications developed with Apache Cordova and jQuery Mobile on Windows Phone 8.
+
+To install jQMThemeForWindowsPhone8, run the following command in the Package Manager Console
+
+    Install-Package jQMThemeForWindowsPhone8
+
+<a href="https://www.nuget.org/packages/jQMThemeForWindowsPhone8Lite">jQMThemeForWindowsPhone8Lite</a>
+
+This nuget package allows developers to apply a Windows Phone style look and feel to applications developed with 'Windows Phone HTML5 App' Visual Studio project template and jQuery Mobile on Windows Phone 8.
+
+To install jQMThemeForWindowsPhone8Lite, run the following command in the Package Manager Console
+
+    Install-Package jQMThemeForWindowsPhone8Lite
