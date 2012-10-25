@@ -2460,6 +2460,25 @@ h1.ui-title {
     margin: -10px 0px 0px 0px;
 }
 
+@media screen and (orientation: portrait) {
+    @-ms-viewport {
+        width: 320px;
+        user-zoom: fixed;
+        max-zoom: 1;
+        min-zoom: 1;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    @-ms-viewport {
+        width: 480px;
+        user-zoom: fixed;
+        max-zoom: 1;
+        min-zoom: 1;
+    }
+}
+
+
 /*content area*/
 .ui-content { border-width: 0; overflow: visible; overflow-x: hidden; padding: 15px; }
 
@@ -2907,13 +2926,6 @@ Horizontal checkbox group
 .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner {  padding: 5px 6px 5px 5px; }
 */
 
-@media all and (min-width: 450px){
-    .ui-field-contain .ui-controlgroup-label { vertical-align: top; display: inline-block;  width: 20%;  margin: 0 2% 0 0;  }
-    .ui-field-contain .ui-controlgroup-controls { width: auto; display: inline-block; }
-    .ui-field-contain .ui-controlgroup .ui-select { width: 100%; }
-    .ui-field-contain .ui-controlgroup-horizontal .ui-select { width: auto; }
-}
-
 /*
 Dialog box
 */
@@ -3063,10 +3075,6 @@ Field contain
 }
 
 .ui-field-contain:first-child { border-top-width: 0; }
-@media all and (min-width: 450px){
-    .ui-field-contain { border-width: 0; padding: 0; margin: 1em 0; }
-}
-
 /*
 Dropbox
 */
@@ -3181,11 +3189,6 @@ Dropbox (custom selectmenu)
 .ui-li.ui-selectmenu-placeholder { display: none; }
 .ui-selectmenu .ui-header .ui-title { margin: 0.6em 0px 0.8em; }
 
-@media all and (min-width: 450px){
-    .ui-field-contain label.ui-select { vertical-align: top;  display: inline-block;  width: 20%;  margin: 0 2% 0 0; }
-    .ui-field-contain .ui-select { width: 100%; display: inline-block; }
-}
-
 /* when no placeholder is defined in a multiple select, the header height doesn't even extend past the close button.  this shim's content in there */
 .ui-selectmenu .ui-header h1:after { content: '.'; visibility: hidden; }label.ui-input-text { font-size: 16px; line-height: 1.4; display: block; font-weight: normal; margin: 0 0 .3em; }
 
@@ -3243,18 +3246,6 @@ textarea.ui-input-text[disabled="disabled"]{
     border: none;
 }
 
-/* orientation adjustments - incomplete!*/
-@media all and (min-width: 450px){
-    .ui-field-contain label.ui-input-text  { vertical-align: top; display: inline-block;  width: 20%;  margin: 0 2% 0 0 }
-    .ui-field-contain input.ui-input-text,
-    .ui-field-contain textarea.ui-input-text,
-    .ui-field-contain .ui-input-search { width: 100%; display: inline-block; }
-    .ui-field-contain .ui-input-search { width: 100%; }
-    .ui-hide-label input.ui-input-text,
-    .ui-hide-label textarea.ui-input-text,
-    .ui-hide-label .ui-input-search { padding: .4em; width: 94%; }
-    .ui-input-search input.ui-input-text { width: 95%; /*echos rule from above*/ }
-}
 .ui-listview {
     margin: 0;
     counter-reset: listnumbering;
@@ -3635,22 +3626,6 @@ span.ui-slider-label-b {
 }
 .ui-popup iframe {
 	vertical-align: middle;
-}
-@media all and (min-width: 450px){
-	.ui-popup .ui-field-contain label.ui-submit,
-	.ui-popup .ui-field-contain .ui-controlgroup-label,
-	.ui-popup .ui-field-contain label.ui-select,
-	.ui-popup .ui-field-contain label.ui-input-text {
-		font-size: 16px; line-height: 1.4; display: block; font-weight: normal; margin: 0 0 .3em;
-	}
-	.ui-popup .ui-field-contain .ui-btn.ui-submit,
-	.ui-popup .ui-field-contain .ui-controlgroup-controls,
-	.ui-popup .ui-field-contain .ui-select,
-	.ui-popup .ui-field-contain input.ui-input-text,
-	.ui-popup .ui-field-contain textarea.ui-input-text,
-	.ui-popup .ui-field-contain .ui-input-search {
-		width: 100%; display: block;
-	}
 }
 .ui-popup > .ui-btn-left,
 .ui-popup > .ui-btn-right {
