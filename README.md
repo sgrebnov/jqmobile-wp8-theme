@@ -1,6 +1,6 @@
 # Welcome #
 
-This theme provides a Windows Phone user interface for Cordova apps using jQuery Mobile on Windows Phone 8.
+This theme provides a Windows Phone user interface for <a href="http://http://incubator.apache.org/cordova/">Apache Cordova</a> apps using jQuery Mobile on Windows Phone 8.
 
 ### Live demo ###
 
@@ -39,7 +39,7 @@ All additional theme plugins are located at /plugins folder
 
     /plugins/app-bar/ - an Application Bar
 
-    /plugins/date-picker/ - - Cordova plugin for WP that exposes the native DateTime picker
+    /plugins/date-picker/ - Apache Cordova plugin for WP that exposes the native DateTime picker
 
     /plugins/progress-bar/ - implements porgress bar control
 
@@ -51,18 +51,18 @@ There is also special js code exporting theme switching functionality located at
 
     /themes/themeswitcher/jquery.mobile.themeswitcher.js
 
-### Cordova ###
+### Apache Cordova ###
 
-The jQM theme for Windows Phone is designed to work with Cordova on Windows Phone 7.5 for optimal integration. This is implemented
-by the following cordova plugins.
+The jQM theme for Windows Phone is designed to work with Apache Cordova on Windows Phone 7.5 for optimal integration. This is implemented
+by the following Apache Cordova plugins.
 
 backButtonHandler.js - hardware back button handling functionality
 
-dateTimePicker.js - js bridge for Cordova native DateTimePicker
+dateTimePicker.js - js bridge for Apache Cordova native DateTimePicker
 
 jquery.cordova.wp.themeswitcher.js - provides functionality to apply system colors (uses phoneTheme.js below)
 
-phoneTheme.js - js bridge for Cordova system colors detection plugin
+phoneTheme.js - js bridge for Apache Cordova system colors detection plugin
 
 ### Samples ###
 
@@ -70,7 +70,7 @@ Official demo for other developers.
 
     /samples/jqm-public-demo/index.html
 
-Windows Phone application based on Cordova framework to demonstrate all theme functionality (system colors, native UI elements).
+Windows Phone application based on Apache Cordova framework to demonstrate all theme functionality (system colors, native UI elements).
 Does not contain any html pages inside, it uses absolute reference to test pages (see next section) located remotly.
 
     /samples/WindowsPhone8/jQMThemeForWindowsPhone
@@ -89,7 +89,7 @@ Note. Pages above are used as a reference for Windows Phone demo application.
 
 ## Prerequisite ##
 The following componets are required for optimal theme work
-Cordova App on Windows Phone 8
+Apache Cordova App on Windows Phone 8
 Silverlight for Windows Phone Toolkit
 http://silverlight.codeplex.com/releases/view/71550#DownloadId=270984
 
@@ -116,5 +116,3 @@ http://silverlight.codeplex.com/releases/view/71550#DownloadId=270984
     /samples/WindowsPhone8/jQMThemeForWindowsPhone/jQMThemeForWindowsPhone.sln
 2. Update CordovaView.StartPageUri (MainPage.xaml) to reference to /tests/basic/gallery/html/forms-all.html located remotly.
 3. Build
-
-
