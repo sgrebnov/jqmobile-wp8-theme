@@ -97,7 +97,8 @@
 
 
     <script type="text/javascript">
-        $.themesDir = 'css/';
+        var absoluteUrl = window.location.href;
+        $.themesDir = absoluteUrl.substring(0, absoluteUrl.lastIndexOf('/')) + '/css/';
 
         $().ready( function() {
             if ((typeof window.external.Notify == "undefined") || !$.browser.msie || parseInt($.browser.version) < 10) {
