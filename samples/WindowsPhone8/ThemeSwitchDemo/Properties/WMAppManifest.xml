@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
-  <DefaultLanguage xmlns="" code="&quot;en-US&quot;, UltimateResourceFallbackLocation.Satellite" />
+  <DefaultLanguage xmlns="" code="en-US" />
   <App xmlns="" ProductID="{9f44d6de-ec28-4af6-bc20-3e9ac187b68c}" Title="ThemeSwitchDemo" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="ThemeSwitchDemo author" BitsPerPixel="32" Description="PhoneGap for Windows Phone 8" Publisher="ThemeSwitchDemo" PublisherID="{4083ccf1-afc2-4878-a782-233c88bbc0f2}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
@@ -47,8 +47,5 @@
       <ScreenResolution Name="ID_RESOLUTION_WXGA" />
       <ScreenResolution Name="ID_RESOLUTION_HD720P" />
     </ScreenResolutions>
-    <Requirements>
-      <Requirement Name="ID_REQ_FRONTCAMERA" />
-    </Requirements>
   </App>
 </Deployment>
