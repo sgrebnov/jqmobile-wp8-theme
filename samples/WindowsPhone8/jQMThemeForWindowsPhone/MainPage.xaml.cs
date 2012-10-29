@@ -38,11 +38,28 @@ namespace jQMThemeForWindowsPhone
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        private bool isContentLoaded = false;
+
         // Constructor
         public MainPage()
         {
             InitializeComponent();
             this.CordovaView.Loaded += CordovaView_Loaded;
+
+            this.CordovaView.Browser.LoadCompleted += (o, e) => 
+            {
+                this.isContentLoaded = true;
+                this.loadingIndicator.Visibility = Visibility.Collapsed; 
+            };
+
+            this.CordovaView.Browser.NavigationFailed += (o, e) =>
+            {
+                if(this.isContentLoaded){
+                    return;
+                }
+                this.loadingIndicator.Visibility = Visibility.Collapsed;
+                MessageBox.Show("Sorry, the page cannot be displayed. Please check your internet connectivity and try again.");
+            };
         }
 
         private void CordovaView_Loaded(object sender, RoutedEventArgs e)

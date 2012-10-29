@@ -40,6 +40,7 @@
                    x:Name="CordovaView" 
                    StartPageUri="http://sgrebnov.github.com/jqmobile-wp8-theme/samples/jqm-public-demo/index.html"                                  
                    VerticalAlignment="Stretch" />
+        <ProgressBar IsIndeterminate="True" Name="loadingIndicator"></ProgressBar>
         <Image Source="SplashScreenImage.jpg"
           x:Name="SplashImage"
           VerticalAlignment="Center"
