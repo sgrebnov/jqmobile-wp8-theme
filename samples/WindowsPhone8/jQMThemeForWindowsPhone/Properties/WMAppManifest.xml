@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{c9192402-507d-4efb-a300-14a25de809a2}" Title="jQMThemeForWindowsPhone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="jQMThemeForWindowsPhone author" BitsPerPixel="32" Description="PhoneGap for Windows Phone 8" Publisher="jQMThemeForWindowsPhone" PublisherID="{d6975e5d-dc67-45e0-b6f7-8ac879a0029c}">
+  <App xmlns="" ProductID="{c9192402-507d-4efb-a300-14a25de809a2}" Title="jQMThemeForWP8" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="jQMThemeForWindowsPhone author" BitsPerPixel="32" Description="PhoneGap for Windows Phone 8" Publisher="jQMThemeForWindowsPhone" PublisherID="{d6975e5d-dc67-45e0-b6f7-8ac879a0029c}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
@@ -30,14 +30,21 @@
           <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>
-          <Title>jQMThemeForWindowsPhone</Title>
-          <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
-          <BackTitle></BackTitle>
-          <LargeBackgroundImageURI></LargeBackgroundImageURI>
-          <LargeBackContent></LargeBackContent>
-          <LargeBackBackgroundImageURI></LargeBackBackgroundImageURI>
-          <DeviceLockImageURI></DeviceLockImageURI>
+          <Title>jQMThemeForWP8</Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <LargeBackgroundImageURI>
+          </LargeBackgroundImageURI>
+          <LargeBackContent>
+          </LargeBackContent>
+          <LargeBackBackgroundImageURI>
+          </LargeBackBackgroundImageURI>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
           <HasLarge>false</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
