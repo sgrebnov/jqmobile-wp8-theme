@@ -166,7 +166,8 @@
                 ".ui-btn-down-b:not(.ui-disabled)[data-role='button'], "+
                 ".ui-btn-down-a:not(.ui-disabled) input[data-role='button'], "+
                 ".ui-btn-down-b:not(.ui-disabled) input[data-role='button']").globalcss('background-color', accentColor + ' !important');
-            $("input[type='text'].ui-focus, textarea.ui-focus, .ui-input-search.ui-focus").globalcss('border-color', accentColor + ' !important');
+            $("input[type='text'].ui-focus, input[type='text']:active, textarea.ui-focus, textarea:active, "+
+                ".ui-input-search.ui-focus").globalcss('border-color', accentColor + ' !important');
             $(".ui-checkbox:not(.ui-disabled) .ui-icon:active, .ui-radio:not(.ui-disabled) .ui-icon:active, "+
                 ".ui-checkbox:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon, .ui-radio:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon,"+
                 ".ui-checkbox:not(.ui-disabled):active .ui-icon, .ui-radio:not(.ui-disabled):active .ui-icon,"+
