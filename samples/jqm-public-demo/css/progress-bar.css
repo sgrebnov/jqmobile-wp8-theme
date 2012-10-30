@@ -7,6 +7,7 @@
     background-color: transparent;
     height: 3px;
     margin: 3px 0px;
+    overflow: hidden;
 }
 
     /* IE7 doesn't support opacity prop so we use filter for it */
@@ -27,17 +28,15 @@
 /*
 indeterminate state
 */
-.ui-progress-bar[indeterminate='true']{
-    background-image: url(../images/wait-indicator.gif);
-    height: 9px;
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.ui-progress-bar[indeterminate='true'] .ui-progress-value{
+    width: 33% !important;
+    animation-name: ui-progress-bar-shift;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-/* IE7 doesn't support opacity prop so we use filter for it */
-.ui-progress-bar[indeterminate='true'] .ui-progress-bg,
-.ui-progress-bar[indeterminate='true'] .ui-progress-value{
-    opacity: 0;
-    filter: Alpha(Opacity=0);
+@keyframes ui-progress-bar-shift{
+    0%{ -ms-transform:  translate(-100%,0px); }
+    100%{ -ms-transform: translate(300%,0px); }
 }
