@@ -1104,6 +1104,7 @@ input, select, textarea, button {
 .ui-btn-down-a:not(.ui-disabled) input[data-role='button'],
 .ui-btn-down-b:not(.ui-disabled) input[data-role='button']{
     background-color: #1BA1E2;
+    background-color: Highlight;
 }
 
 .ui-btn-down-a:not(.ui-disabled) input[data-role='button'],
@@ -1139,6 +1140,7 @@ a.ui-link-inherit {
 }
 .ui-btn-active a.ui-link-inherit {
     color: 					#1BA1E2 /*{global-active-color}*/;
+    color: Highlight;
 }
 
 
@@ -1438,6 +1440,7 @@ a.ui-link-inherit {
 .ui-controlgroup-horizontal .ui-checkbox:not(.ui-disabled) .ui-btn .ui-btn-inner:active,
 .ui-controlgroup-horizontal .ui-radio:not(.ui-disabled) .ui-btn .ui-btn-inner:active{
     background-color: #1BA1E2;
+    background-color: Highlight;
 }
 
 .ui-icon-checkbox-off,
@@ -3170,6 +3173,7 @@ Dropbox (custom selectmenu)
 
 .ui-selectmenu-list li[aria-selected='true'] .ui-btn-text a{
     color: #1BA1E2;
+    color: Highlight;
 }
 
 .ui-selectmenu-list .ui-btn-text a{
@@ -3215,6 +3219,7 @@ textarea:focus,
 textarea:active,
 .ui-input-search.ui-focus{
     border: 2px solid #1BA1E2;
+    border-color: Highlight;
 }
 
 input.ui-input-text[disabled="disabled"],
@@ -3343,6 +3348,7 @@ ol.ui-listview .ui-li-jsnumbering:before { content: "" !important; } /* to avoid
 .ui-li-divider {
     cursor: default;
     background-color: #1BA1E2;
+    background-color: Highlight;
     color: white;
     font-size: 19pt;
     font-weight: normal;
@@ -3414,6 +3420,7 @@ div.ui-slider:not(.ui-slider-switch):not(.ui-disabled):before {
     top: 6px;
     left: 0px;
     background-color: #1BA1E2;
+    background-color: Highlight;
 }
 
 
@@ -3459,6 +3466,7 @@ a.ui-slider-handle-snapping { }
 
 div.ui-slider-switch span.ui-slider-label-a {
     background-color: #1BA1E2;
+    background-color: Highlight;
     color: transparent;
     display: inline;
     left: 0;
