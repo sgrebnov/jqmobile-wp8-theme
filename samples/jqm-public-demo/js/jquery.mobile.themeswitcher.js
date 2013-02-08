@@ -147,43 +147,6 @@
         if ($.mobile.activePage) {
             $.mobile.activePage.removeClass('ui-overlay-a ui-overlay-b ui-overlay-c ui-overlay-d ui-overlay-e').addClass('ui-overlay-'+theme);
         }
-
-
-        if (isSystem)
-        {
-            var accentColor = window.accentColor;//"#FF0097"; //magenta
-
-            this.enableStylesheet("globalStyleSheet", true);
-
-            $(".ui-btn-active a.ui-link-inherit").globalcss('color', accentColor + ' !important');
-            $(".ui-selectmenu-list li[aria-selected='true'] .ui-btn-text a").globalcss('color', accentColor+ ' !important');
-            $(".ui-li-divider").globalcss('background-color', accentColor+ ' !important');
-            $("div.ui-slider:not(.ui-disabled):not(.ui-slider-switch):before").globalcss('background-color', accentColor + ' !important');
-            $("div.ui-slider-switch span.ui-slider-label-a").globalcss('background-color', accentColor+ ' !important');
-            $(".ui-progress-bg").globalcss('background-color', accentColor + ' !important');
-            $(".ui-progress-value").globalcss('background-color', accentColor + ' !important');
-            $(".ui-btn-down-a:not(.ui-disabled)[data-role='button'], "+
-                ".ui-btn-down-b:not(.ui-disabled)[data-role='button'], "+
-                ".ui-btn-down-a:not(.ui-disabled) input[data-role='button'], "+
-                ".ui-btn-down-b:not(.ui-disabled) input[data-role='button']").globalcss('background-color', accentColor + ' !important');
-            $("input[type='text'].ui-focus, input[type='text']:active, textarea.ui-focus, textarea:active, "+
-                ".ui-input-search.ui-focus").globalcss('border-color', accentColor + ' !important');
-            $(".ui-checkbox:not(.ui-disabled) .ui-icon:active, .ui-radio:not(.ui-disabled) .ui-icon:active, "+
-                ".ui-checkbox:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon, .ui-radio:not(.ui-disabled) .ui-btn-text:active ~ .ui-icon,"+
-                ".ui-checkbox:not(.ui-disabled):active .ui-icon, .ui-radio:not(.ui-disabled):active .ui-icon,"+
-                ".ui-checkbox:not(.ui-disabled) .ui-btn:active .ui-icon, .ui-radio:not(.ui-disabled) .ui-btn:active .ui-icon,"+
-                ".ui-checkbox:not(.ui-disabled) .ui-btn-inner:active .ui-icon, .ui-radio:not(.ui-disabled) .ui-btn-inner:active .ui-icon,"+
-                ".ui-controlgroup-horizontal .ui-checkbox:not(.ui-disabled) .ui-btn .ui-btn-inner:active,"+
-                ".ui-controlgroup-horizontal .ui-radio:not(.ui-disabled) .ui-btn .ui-btn-inner:active").globalcss('background-color', accentColor + ' !important');
-
-            // $('style[title="globalStyleSheet"]').removeAttr('disabled');
-
-        }
-        else
-        {
-            $.enableStylesheet("globalStyleSheet", false);
-        }
-
     }
 
     $.enableStylesheet = function(name, isEnabled) {
