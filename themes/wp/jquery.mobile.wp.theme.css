@@ -1617,7 +1617,8 @@ a.ui-link-inherit {
 }
 
 .ui-input-text.ui-focus,
-.ui-input-search.ui-focus {
+.ui-input-search.ui-focus,
+.ui-input-text.ui-focus input {
     background-color: white !important;
 }
 
