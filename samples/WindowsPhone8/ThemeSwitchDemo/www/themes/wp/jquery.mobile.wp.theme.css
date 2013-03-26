@@ -1099,10 +1099,10 @@ input, select, textarea, button {
     text-decoration: none;
 }
 
-.ui-btn-down-a:not(.ui-disabled)[data-role='button'],
-.ui-btn-down-b:not(.ui-disabled)[data-role='button'],
-.ui-btn-down-a:not(.ui-disabled) input[data-role='button'],
-.ui-btn-down-b:not(.ui-disabled) input[data-role='button']{
+.ui-btn-down-a:not(.ui-disabled):not([disabled])[data-role='button'],
+.ui-btn-down-b:not(.ui-disabled):not([disabled])[data-role='button'],
+.ui-btn-down-a:not(.ui-disabled):not([disabled]) input[data-role='button'],
+.ui-btn-down-b:not(.ui-disabled):not([disabled]) input[data-role='button']{
     background-color: #1BA1E2;
     background-color: Highlight;
 }
