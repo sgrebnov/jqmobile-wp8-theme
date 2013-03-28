@@ -3268,7 +3268,7 @@ div.ui-slider {
     border: 0px;
 }
 div.ui-slider-switch { width: 99.8%; }
-a.ui-slider-handle { position: absolute; z-index: 10;  top: 50%; width: 28px; height: 28px; margin-top: -15px; margin-left: -15px; border: 0px;}
+a.ui-slider-handle { position: absolute; z-index: 10;  top: 50%; width: 28px; height: 28px; margin-top: -15px; margin-left: -15px; border: 0px; -ms-touch-action: none;}
 
 div.ui-slider a.ui-slider-handle {
     position: absolute;
