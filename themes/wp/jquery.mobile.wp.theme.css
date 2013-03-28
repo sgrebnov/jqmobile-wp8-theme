@@ -3547,3 +3547,8 @@ span.ui-slider-label-b {
 	background-color: black;
 	filter: Alpha(Opacity=0);
 }
+
+.ui-popup-hidden {
+	top: -99999px;
+	left: -9999px;
+}
