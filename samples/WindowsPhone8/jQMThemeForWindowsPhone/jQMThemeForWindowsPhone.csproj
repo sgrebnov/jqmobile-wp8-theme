@@ -40,7 +40,7 @@
     <UICulture>en-US</UICulture>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>jQMThemeForWindowsPhone.xap</XapFilename>
+    <XapFilename>CordovaAppProj_$(Configuration)_$(Platform).xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>jQMThemeForWindowsPhone.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
@@ -144,12 +144,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="config.xml" />
     <Content Include="CordovaLib\WPCordovaClassLib.dll" />
-    <Content Include="CordovaSourceDictionary.xml" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="www\readme.txt" />
-    <None Include="BuildManifestProcessor.js" />
     <None Include="cordova\debug.bat" />
     <None Include="cordova\emulate.bat" />
     <None Include="Properties\AppManifest.xml">
@@ -174,7 +173,7 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
-    <Reference Include="WPCordovaClassLib, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="WPCordovaClassLib, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
@@ -187,7 +186,6 @@
   -->
   <ProjectExtensions />
   <PropertyGroup>
-    <PreBuildEvent>CScript "$(ProjectDir)/BuildManifestProcessor.js" "$(ProjectPath)"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>

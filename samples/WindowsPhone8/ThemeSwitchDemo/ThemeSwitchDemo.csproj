@@ -40,7 +40,7 @@
     <UICulture>en-US</UICulture>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>ThemeSwitchDemo.xap</XapFilename>
+    <XapFilename>CordovaAppProj_$(Configuration)_$(Platform).xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>ThemeSwitchDemo.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
@@ -142,9 +142,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="config.xml" />
     <Content Include="CordovaLib\WPCordovaClassLib.dll" />
-    <Content Include="CordovaSourceDictionary.xml" />
-    <Content Include="www\cordova-2.2.0.js" />
+    <Content Include="www\cordova-2.5.0.js" />
+    <Content Include="www\css\index.css" />
+    <Content Include="www\img\cordova.png" />
+    <Content Include="www\index.html" />
     <Content Include="www\js\index.js" />
     <Content Include="www\js\jquery.cordova.wp.themeswitcher.js" />
     <Content Include="www\js\jquery.globalstylesheet.js" />
@@ -161,15 +164,9 @@
     <Content Include="www\themes\wp\images\icons-36-white.png" />
     <Content Include="www\themes\wp\images\radiobtn-black.png" />
     <Content Include="www\themes\wp\images\radiobtn-disabled.png" />
-    <Content Include="www\themes\wp\images\wait-indicator.gif" />
     <Content Include="www\themes\wp\images\radiobtn-white.png" />
+    <Resource Include="www\themes\wp\images\wait-indicator.gif" />
     <Content Include="www\themes\wp\jquery.mobile.wp.theme.css" />
-    <None Include="BuildManifestProcessor.js" />
-    <Content Include="www\css\index.css" />
-    <Content Include="www\img\cordova.png" />
-    <Content Include="www\index.html">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="cordova\debug.bat" />
     <None Include="cordova\emulate.bat" />
     <None Include="Properties\AppManifest.xml">
@@ -196,7 +193,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="WPCordovaClassLib, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="WPCordovaClassLib, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
@@ -209,7 +206,6 @@
   -->
   <ProjectExtensions />
   <PropertyGroup>
-    <PreBuildEvent>CScript "$(ProjectDir)/BuildManifestProcessor.js" "$(ProjectPath)"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>

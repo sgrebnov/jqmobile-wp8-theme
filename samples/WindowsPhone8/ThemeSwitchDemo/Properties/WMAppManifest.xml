@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{9f44d6de-ec28-4af6-bc20-3e9ac187b68c}" Title="ThemeSwitchDemo" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="ThemeSwitchDemo author" BitsPerPixel="32" Description="PhoneGap for Windows Phone 8" Publisher="ThemeSwitchDemo" PublisherID="{4083ccf1-afc2-4878-a782-233c88bbc0f2}">
+  <App xmlns="" ProductID="{f93534d1-a26c-4668-9f2c-716b5c18a8f1}" Title="ThemeSwitchDemo" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="ThemeSwitchDemo author" BitsPerPixel="32" Description="Apache Cordova for Windows Phone" Publisher="CordovaExample" PublisherID="{b93a0d8e-5aa9-4d9b-b232-17e2d852e779}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
@@ -10,7 +10,6 @@
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
       <Capability Name="ID_CAP_APPOINTMENTS" />
-      <Capability Name="ID_CAP_CAMERA" />
       <Capability Name="ID_CAP_CONTACTS" />
       <Capability Name="ID_CAP_ISV_CAMERA" />
       <Capability Name="ID_CAP_MICROPHONE" />
