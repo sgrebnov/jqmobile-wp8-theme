@@ -46,8 +46,10 @@ $(document).ready(function(){
     }
     
     // ie specific logic and fixes
-
-    $.mobile.pushStateEnabled = false;
+    
+    if (document.URL.indexOf("http://") == -1) {
+        $.mobile.pushStateEnabled = false;
+    }
     
     var version = parseInt($.browser.version);
     $(document.body).addClass('ui-ie' + version);
