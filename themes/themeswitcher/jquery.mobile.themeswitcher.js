@@ -6,7 +6,8 @@
     $.themesDir = '../../../../themes/';
 
     $.themeswitcher = function () {
-        if ($('[data-' + $.mobile.ns + '-url=themeswitcher]').length) { return; }
+        var ns = $.mobile.ns.length > 0 ? ($.mobile.ns + '-') : '';
+        if ($('[data-' + ns + 'url=themeswitcher]').length) { return; }
 
         $.getPhoneTheme();
 
@@ -31,7 +32,7 @@
         $.each(themes, function (i) {
             $('<li><a href="#" data-' + $.mobile.ns + 'rel="back">' + themes[i].charAt(0).toUpperCase() + themes[i].substr(1) + '</a></li>')
 				.bind("vclick", function () {
-				    //menuPage.dialog( "close" );
+				    menuPage.dialog( "close" );
 				    window.themeId = themes[i];
                     $.addTheme(window.themeId, true);
 				    return false;
