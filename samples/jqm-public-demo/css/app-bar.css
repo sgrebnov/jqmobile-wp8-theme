@@ -44,16 +44,13 @@ Button panel
     border-color: white;
 }
 
-.ui-app-bar .ui-app-bar-btn-panel .ui-btn-down-a{
-    background-color: white;
+.ui-app-bar .ui-app-bar-btn-panel .ui-btn-down-a,
+.ui-app-bar .ui-app-bar-btn-panel .ui-btn-down-b{
+    background-color: highlight;
 }
 
 .ui-app-bar .ui-app-bar-btn-panel .ui-btn-up-b{
     border-color: black;
-}
-
-.ui-app-bar .ui-app-bar-btn-panel .ui-btn-down-b{
-    background-color: black;
 }
 
 .ui-app-bar .ui-app-bar-btn-panel .ui-btn .ui-btn-text{

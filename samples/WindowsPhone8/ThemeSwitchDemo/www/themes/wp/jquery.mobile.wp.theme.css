@@ -1020,7 +1020,10 @@ input, select, textarea, button {
 .ui-btn-down-a:not(.ui-disabled):not([disabled]) input[data-role='button'],
 .ui-btn-down-b:not(.ui-disabled):not([disabled]) input[data-role='button'],
 .ui-btn-down-a.ui-submit:not(.ui-disabled):not([disabled]),
-.ui-btn-down-b.ui-submit:not(.ui-disabled):not([disabled]) {
+.ui-btn-down-b.ui-submit:not(.ui-disabled):not([disabled]),
+.jqm-themeswitcher .ui-btn-down-a .ui-btn-inner,
+.jqm-themeswitcher .ui-btn-down-b .ui-btn-inner,
+.ui-footer .ui-btn .ui-icon:active{
     background-color: #1BA1E2;
     background-color: Highlight;
 }
@@ -3150,6 +3153,11 @@ ol.ui-listview .ui-li-jsnumbering:before { content: "" !important; } /* to avoid
     font-size: 19pt !important;
     font-weight: normal !important;
 
+}
+
+.ui-listview li.ui-btn a:active {
+	background-color: transparent;
+	color: highlight;
 }
 
 .ui-listview li.ui-li-divider {

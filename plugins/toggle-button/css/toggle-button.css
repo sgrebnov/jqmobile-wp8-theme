@@ -38,6 +38,10 @@ icon
     background-color: black;
 }
 
+.ui-toggle-icon:active{
+    background-color: highlight !important;
+}
+
 /*
 caption
 */
