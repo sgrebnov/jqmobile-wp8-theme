@@ -23,7 +23,7 @@
                     timerId = null;
                 }
                 var val = $("#slider1").val();
-                $('#progressBar1').data('progressbar').value($("#slider1").val());
+                $('#progressBar1').progressbar('value', $("#slider1").val());
 
             });
 
@@ -33,20 +33,20 @@
                         timerId = null;
                         return;
                     }
-                    $('#progressBar1').data('progressbar').value(0);
+                    $('#progressBar1').progressbar('value', 0);
                     timerId = setInterval(function(){
-                    var value = $('#progressBar1').data('progressbar').value();
+                    var value = $('#progressBar1').progressbar('value');
                     if(value>=100){
                         clearInterval(timerId);
                         timerId = null;
                     }
-                    $('#progressBar1').data('progressbar').value(value+1);
+                    $('#progressBar1').progressbar('value', (value+1));
                 },50)
             });
 
             var indeterm = true;
             $('#check1').click(function () {
-                    $('#progressBar1').data('progressbar').indeterminate(indeterm);
+                    $('#progressBar1').progressbar('indeterminate', indeterm);
                     indeterm = !indeterm;
             });
 
@@ -71,6 +71,7 @@
                     <input type="checkbox" id="check1"/>
                     <label for="check1">indeterminate</label>
                 </fieldset>
+                <br/>
                 <a href="#" data-inline="true" data-role="button" id="getValBtn">simulate progress</a>
 
                 <br/>
