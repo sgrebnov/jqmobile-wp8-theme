@@ -50,15 +50,12 @@ cordova.addConstructor(function () {
                     .attr('data-theme', themeSwatch);
 
                 //reset the page widget
-                $('.ui-page-active, .ui-content').removeClass('ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e')
+                $('.ui-body-a, .ui-body-b, .ui-body-c, .ui-body-d, .ui-body-e').removeClass('ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e')
                     .addClass('ui-body-' + themeSwatch)
                     .attr('data-theme', themeSwatch);
 
                 // toggle button fix
                 $('.ui-toggle-button').removeClass('ui-toggle-button-a ui-toggle-button-b').addClass('ui-toggle-button-' + themeSwatch);
-
-                $('.ui-selectmenu').removeClass('ui-body-a ui-body-b').addClass('ui-body-' + themeSwatch).attr('data-theme', themeSwatch);
-
             }
             catch (ex) {
                 if (errorCallback)
