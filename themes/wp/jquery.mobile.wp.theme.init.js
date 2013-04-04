@@ -59,7 +59,7 @@ $(document).ready(function(){
     if(version < 10){
         bodyMinHeightFix();    
     } else {
-        $.mobile.defaultDialogTransition = 'slide';
-        $.mobile.defaultPageTransition = 'slide';
+        $.mobile.defaultDialogTransition = 'turn';
+        $.mobile.defaultPageTransition = 'turn';
     }     
 });
