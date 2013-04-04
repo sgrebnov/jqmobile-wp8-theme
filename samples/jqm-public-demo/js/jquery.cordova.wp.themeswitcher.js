@@ -57,6 +57,8 @@ cordova.addConstructor(function () {
                 // toggle button fix
                 $('.ui-toggle-button').removeClass('ui-toggle-button-a ui-toggle-button-b').addClass('ui-toggle-button-' + themeSwatch);
 
+                $('.ui-selectmenu').removeClass('ui-body-a ui-body-b').addClass('ui-body-' + themeSwatch).attr('data-theme', themeSwatch);
+
             }
             catch (ex) {
                 if (errorCallback)

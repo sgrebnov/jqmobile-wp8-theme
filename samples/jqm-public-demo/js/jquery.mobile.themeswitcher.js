@@ -137,12 +137,14 @@
             .addClass('ui-body-' + theme)
             .attr('data-theme', theme);
 
-	$(activePage).removeClass('ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e')
+        $(activePage).removeClass('ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e')
             .addClass('ui-body-' + theme)
             .attr('data-theme', theme);
 
         // toggle button fix
         $(activePage).find('.ui-toggle-button').removeClass('ui-toggle-button-a ui-toggle-button-b').addClass('ui-toggle-button-' + theme);
+
+        $(activePage).find('.ui-selectmenu').removeClass('ui-body-a ui-body-b').addClass('ui-body-' + theme).attr('data-theme', theme);
 
         // update dialog overlay
         if ($.mobile.activePage) {
