@@ -1519,9 +1519,8 @@ a.ui-link-inherit {
     /*background-color: white !important;*/
 }
 
-.ui-input-text.ui-focus,
-.ui-input-search.ui-focus,
-.ui-input-text.ui-focus input {
+input[type="text"]:focus,
+textarea:focus{
     background-color: white !important;
 }
 
@@ -3087,8 +3086,7 @@ textarea.ui-input-text { height: 50px; transition: height 200ms linear; }
 input[type="text"]:focus,
 input[type="text"]:active,
 textarea:focus,
-textarea:active,
-.ui-input-search.ui-focus{
+textarea:active{
     border: 2px solid #1BA1E2;
     border-color: Highlight;
 }
@@ -3104,22 +3102,16 @@ textarea.ui-input-text[disabled="disabled"]{
     position: relative;
     width: 100%;
     height:32px;
-    border: 2px solid #bfbfbf;
+    border: none;
     box-shadow: none;
 }
 
 .ui-icon-searchfield:after { position: absolute; left: 7px; top: 50%; margin-top: -9px; content: ""; width: 18px; height: 23px; opacity: .5; }
-.ui-input-search input.ui-input-text { border: none; width: 95%; padding: .2em .3em .3em .3em; margin: 0; display: block; background: transparent none; outline: 0 !important;}
-.ui-input-search .ui-input-clear { position: absolute; right: 0; top: 50%; margin-top: -13px; display: none;}
 .ui-input-search .ui-input-clear-hidden { display: none; }
 
 .ui-input-search{
     border-radius: 0px;
     background-color: #bfbfbf;
-}
-
-.ui-input-search.ui-focus input.ui-input-text{
-    border: none;
 }
 
 .ui-listview {
