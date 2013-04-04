@@ -36,6 +36,13 @@ function bodyMinHeightFix() {
 
 }
 
+if (document.URL.indexOf("http://") == -1) {
+    $.mobile.pushStateEnabled = false;
+    $.when($.mobile.navreadyDeferred).done(function() {
+        history.replaceState(null, document.title, $.mobile.path.getLocation());
+    });
+}
+
 $(document).ready(function(){
     // disable transitions effects by default	
     $.mobile.defaultDialogTransition = 'none';
@@ -46,11 +53,6 @@ $(document).ready(function(){
     }
     
     // ie specific logic and fixes
-    
-    if (document.URL.indexOf("http://") == -1) {
-        $.mobile.pushStateEnabled = false;
-    }
-    
     var version = parseInt($.browser.version);
     $(document.body).addClass('ui-ie' + version);
 
