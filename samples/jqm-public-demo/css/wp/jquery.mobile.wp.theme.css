@@ -202,6 +202,14 @@ Checkbox and radio button
     border-color: white;
 }
 
+.ui-checkbox-on.ui-btn-up-a.ui-btn-active,
+.ui-radio-on.ui-btn-up-a.ui-btn-active,
+.ui-checkbox-on.ui-btn-hover-a.ui-btn-active,
+.ui-radio-on.ui-btn-hover-a.ui-btn-active{
+    color: white;
+    border-color: white;
+}
+
 .ui-checkbox.ui-disabled .ui-btn-up-a .ui-icon, .ui-radio.ui-disabled .ui-btn-up-a .ui-icon,
 .ui-checkbox.ui-disabled .ui-btn-hover-a .ui-icon, .ui-radio.ui-disabled .ui-btn-hover-a .ui-icon{
     background-color: #808080;
@@ -409,6 +417,14 @@ Checkbox and radio button
 .ui-radion .ui-btn-up-b .ui-icon,
 .ui-radio .ui-btn-down-b .ui-icon
 .ui-radio .ui-icon{
+    border-color: black;
+}
+
+.ui-checkbox-on.ui-btn-up-b.ui-btn-active,
+.ui-radio-on.ui-btn-up-b.ui-btn-active,
+.ui-checkbox-on.ui-btn-hover-b.ui-btn-active,
+.ui-radio-on.ui-btn-hover-b.ui-btn-active{
+    color: black;
     border-color: black;
 }
 
