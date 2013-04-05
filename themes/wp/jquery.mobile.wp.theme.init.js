@@ -62,4 +62,9 @@ $(document).ready(function(){
         $.mobile.defaultDialogTransition = 'turn';
         $.mobile.defaultPageTransition = 'turn';
     }     
+
+    // If updatePagePadding is called before the page has been loaded the following code line returns NaN instead of '0':
+    // pos = parseFloat( $el.css( header ? "top" : "bottom" ) );
+    // So we need to update the padding again after the page has been loaded.
+    $('.ui-header-fixed').fixedtoolbar('updatePagePadding');
 });
