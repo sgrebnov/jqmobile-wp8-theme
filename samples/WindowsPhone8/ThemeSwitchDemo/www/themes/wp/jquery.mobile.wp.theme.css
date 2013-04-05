@@ -3026,7 +3026,8 @@ Dropbox (custom selectmenu)
     padding: 6px;
     z-index: 1100 !important;
     width: 100%;
-    height: 100%;
+    height: auto;
+    overflow: auto;
     border-radius: 0 !important;
 }
 .ui-selectmenu .ui-listview { margin: 0; }
@@ -3038,12 +3039,12 @@ Dropbox (custom selectmenu)
 
 @media screen and (orientation: portrait){
     .ui-selectmenu-list {
-        min-height: 420px;
+        min-height: 480px;
     }
 }
 @media screen and (orientation: landscape){
     .ui-selectmenu-list {
-        min-height: 300px;
+        min-height: 320px;
     }
 }
 
@@ -3187,6 +3188,10 @@ ol.ui-listview .ui-li-jsnumbering:before { content: "" !important; } /* to avoid
 
 .ui-listview .ui-li-divider {
     border-radius: 0px;
+}
+
+.ui-listview a {
+    -ms-touch-action: pan-y;
 }
 
 .ui-li:last-child, .ui-li.ui-field-contain:last-child { border-bottom-width: 1px; }
