@@ -2256,48 +2256,24 @@ Loading screen
     vertical-align: middle;
 }
 
-@media screen and (device-height: 800px) and (orientation: portrait){
-    .ui-loader.ui-loader-verbose {
-        margin: -240px 0px 0px 0px;
-        padding: 0px 0px 0px 15px;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        background-color: #202020;
-        z-index: 1200;
-    }
-
-    .ui-loader.ui-loader-verbose h1 {
-        text-align: left !important;
-    }
-
-    .ui-loader.ui-loader-verbose span.ui-icon-loading {
-        visibility: hidden;
-    }
+.ui-loader.ui-loader-verbose {
+	z-index: 1200;
+	position: fixed;
+	background-color: #202020;
+	top: 0px !important;
+	padding: 0px 12px 0px 15px;
 }
 
-@media screen and (device-width: 480px) and (orientation: landscape){
+.ui-loader.ui-loader-verbose h1 {
+	text-align: left !important;
+}
 
-    .ui-loader.ui-loader-verbose {
-        margin: -160px 0px 0px 0px;
-        padding: 0px 0px 0px 15px;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        background-color: #202020;
-        z-index: 1200;
-    }
-
-    .ui-loader.ui-loader-verbose h1 {
-        text-align: left !important;
-    }
-
-    .ui-loader.ui-loader-verbose span.ui-icon-loading {
-        visibility: hidden;
-    }
+.ui-loader.ui-loader-verbose span.ui-icon-loading {
+	visibility: hidden;
 }
 
 .ui-loader h1 {
+	top: 35%;
     font-size: 15px;
     color: white;
     position: static;
@@ -2305,10 +2281,9 @@ Loading screen
 }
 
 .ui-loader.ui-loader-verbose h1 {
-    top: 45%;
     left: 0;
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 
 .ui-loader .ui-icon {
