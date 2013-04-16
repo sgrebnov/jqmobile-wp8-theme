@@ -3558,30 +3558,9 @@ span.ui-slider-label-b {
 
 /* jQM 1.3 new controls */
 
-.ui-rangeslider {
-	margin: 0;
-}
-.ui-rangeslider:before,
-.ui-rangeslider:after {
-	content: "";
-	display: table;
-}
-.ui-rangeslider:after {
-	clear: both;
-}
-/* Margin-top/bottom: .5em * 16px/14px to make it equal to ui-rangeslider-sliders margin (input font-size is 14px) */
-.ui-rangeslider input.ui-input-text.ui-slider-input {
-	margin: .57143em 0;
-}
-.ui-rangeslider.ui-mini input.ui-slider-input {
-	margin: .28571em 0;
-}
-
 .ui-rangeslider .ui-rangeslider-sliders {
 	position: relative;
-	overflow: visible;
 	height: 28px;
-	margin: 0;
 }
 
 .ui-rangeslider .ui-slider-bg {
@@ -3600,11 +3579,9 @@ span.ui-slider-label-b {
 	top: 10px;
 	right: 0;
 	left: 0;
-	margin: 0;
 }
 
 .ui-rangeslider .ui-rangeslider-sliders .ui-slider-track {
 	height: 8px;
-	border: none;
 	border-radius: 0px !important;
 }
