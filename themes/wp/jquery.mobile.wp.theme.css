@@ -3540,11 +3540,16 @@ span.ui-slider-label-b {
 	width: 100%;
 	height: 100%;
 	border: 0;
-	position: absolute;
+	position: fixed;
 	filter: Alpha(Opacity=50);
 	opacity: 0;
 	z-index: 1099;
 }
+
+.ui-popup-screen.in + .ui-popup-active {
+	min-height: 0px;
+}
+
 .ui-popup-screen-background-hack {
 	background-color: black;
 	filter: Alpha(Opacity=0);
@@ -3598,7 +3603,7 @@ span.ui-slider-label-b {
 .ui-table td {
 	line-height: 1.5em;
 	text-align: left;
-	padding: .4em .5em;
+	padding: .4em .5em .4em 0;
 	vertical-align:top;
 }
 .ui-table th .ui-btn,
@@ -3606,7 +3611,8 @@ span.ui-slider-label-b {
 	line-height: normal;
 }
 .ui-table th {
-	font-weight: bold;
+	font-weight: normal;
+	font-size: 15pt;
 }
 .ui-table caption {
 	text-align:left;
@@ -3646,6 +3652,17 @@ span.ui-slider-label-b {
 .ui-table-columntoggle-popup fieldset {
 	margin:0;
 }
+
+.ui-table-columntoggle-popup {
+	background-color: #202020;
+	padding-left: 15px;
+	border-radius: 0;
+}
+
+.ui-table-columntoggle-popup .ui-btn {
+	background-color: transparent;
+}
+
 /* Hide all prioritized columns by default */
 @media only all {
 	th.ui-table-priority-6,
@@ -3726,6 +3743,7 @@ span.ui-slider-label-b {
 .ui-table-reflow td .ui-table-cell-label,
 .ui-table-reflow th .ui-table-cell-label {
 	display: none;
+	font-weight: 300;
 }
 /* Mobile first styles: Begin with the stacked presentation at narrow widths */
 @media only all {
@@ -3742,7 +3760,11 @@ span.ui-slider-label-b {
 	}
 	/* Add a fair amount of top margin to visually separate each row when stacked */
 	.ui-table-reflow tbody th {
-		margin-top: 3em;
+		margin-top: 1em;
+	}
+
+	.ui-table-reflow tbody tr:first-child th {
+		margin-top: 0;
 	}
 	/* Make the label elements a percentage width */
 	.ui-table-reflow td .ui-table-cell-label,
