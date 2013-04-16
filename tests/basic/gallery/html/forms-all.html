@@ -55,6 +55,11 @@ if (typeof window.external.Notify !== "undefined") {
 </head>
 <body onload="$.mobile.touchToggleEnabled = false;">
 	<div data-role="page" class="type-interior" data-theme="a">
+
+	<div data-role="panel" id="mypanel">
+		<a href="#" data-role="button" data-inline="true" data-rel="close">close panel</a>
+	</div>
+
 		<div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false">
 			<span class="ui-app-title">App title</span>
 			<h1>The header</h1>
@@ -293,6 +298,12 @@ if (typeof window.external.Notify !== "undefined") {
 				<br/>
 				<label for="link-dialog">Dialog box:</label>
 				<a id="link-dialog" href="dialog-box.html" data-rel="dialog">Open dialog</a>
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="link-wrong-page">Panel:</label>
+				<br/>
+				<a href="#mypanel" data-role="button" data-inline="true">Open panel</a>
 			</div>
 
             <h2>Table layout</h2>
