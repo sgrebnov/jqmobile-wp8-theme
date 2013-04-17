@@ -133,11 +133,8 @@
             .attr('data-theme', theme);
 
         //reset the page widget
-        $(activePage).find('.ui-content').removeClass('ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e')
-            .addClass('ui-body-' + theme)
-            .attr('data-theme', theme);
-
-        $(activePage).find('.ui-body-a, .ui-body-b, .ui-body-c, .ui-body-d, .ui-body-e').removeClass('ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e')
+        
+        $('.ui-body-a, .ui-body-b, .ui-body-c, .ui-body-d, .ui-body-e').removeClass('ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e')
             .addClass('ui-body-' + theme)
             .attr('data-theme', theme);
 
