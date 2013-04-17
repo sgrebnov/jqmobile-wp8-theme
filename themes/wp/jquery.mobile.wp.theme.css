@@ -3830,6 +3830,11 @@ span.ui-slider-label-b {
 	position: absolute;
 	top: 0;
 	display: block;
+	background-color: #202020;
+}
+
+.ui-panel .ui-btn {
+	background-color: transparent;
 }
 .ui-panel-closed {
 	width: 0;
@@ -3877,6 +3882,8 @@ span.ui-slider-label-b {
 }
 .ui-panel-dismiss-open {
 	display: block;
+	background-color: white;
+	opacity: 0.001;
 }
 /* animate class is added to panel, wrapper and fixed toolbars */
 .ui-panel-animate {
