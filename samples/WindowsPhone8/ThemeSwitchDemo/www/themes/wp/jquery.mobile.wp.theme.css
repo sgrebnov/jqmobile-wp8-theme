@@ -300,6 +300,14 @@ Footer
     background-color: #202020;
 }
 
+.ui-table-columntoggle-popup.ui-body-a {
+	background-color: #202020;
+}
+
+.ui-panel.ui-body-a {
+	background-color: #202020;
+}
+
 /* B
 -----------------------------------------------------------------------------------------------------------*/
 body.ui-overlay-b{
@@ -522,6 +530,14 @@ Footer
 .ui-body-b.ui-selectmenu,
 .ui-body-b.ui-selectmenu div {
     background-color: #bfbfbf;
+}
+
+.ui-table-columntoggle-popup.ui-body-b {
+	background-color: #cccccc;
+}
+
+.ui-panel.ui-body-b {
+	background-color: #cccccc;
 }
 
 /* C
@@ -3654,7 +3670,6 @@ span.ui-slider-label-b {
 }
 
 .ui-table-columntoggle-popup {
-	background-color: #202020;
 	padding-left: 15px;
 	border-radius: 0;
 }
