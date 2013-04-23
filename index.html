@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jqmobile-wp8-theme by sgrebnov</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jqmobile-wp8-theme</h1>
+        <p>My attempt to implement jQuery Mobile theme for Windows Phone 8</p>
+        <p class="view"><a href="https://github.com/sgrebnov/jqmobile-wp8-theme">View the Project on GitHub <small>sgrebnov/jqmobile-wp8-theme</small></a></p>
+        <ul>
+          <li><a href="https://github.com/sgrebnov/jqmobile-wp8-theme/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/sgrebnov/jqmobile-wp8-theme/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/sgrebnov/jqmobile-wp8-theme">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+        <p class="view"><a href="https://www.nuget.org/profiles/MSOpenTech">Theme NuGet package for Visual Studio</a></p>
+	<a href="https://www.nuget.org/profiles/MSOpenTech">
+	<img width="345" height="75" border="0" src="http://haacked.com/images/haacked_com/Windows-Live-Writer/A-Look-Back-Open-Source-and-.NET-2011_CBF9/nugetlogo_3.png" 	alt="NuGet Logo" title="NuGet" >
+	</a>
+      </header>
+      <section>
+        <h1>Welcome</h1>
+
+<p>This theme provides a Windows Phone user interface for <a href="http://http//incubator.apache.org/cordova/">Apache Cordova</a> apps using jQuery Mobile on Windows Phone 8.</p>
+
+<h3>Live demo</h3>
+
+<p><a href="http://sgrebnov.github.com/jqmobile-wp8-theme/samples/jqm-public-demo/index.html">Web demo</a></p>
+
+<p><a href="http://sgrebnov.github.com/jqmobile-wp8-theme/samples/jQMThemeForWP8.xap">Windows Phone 8 demo app</a></p>
+<h3>Copyrights</h3>
+<p>
+  Licensed under the Apache License, Version 2.0 (the "License")<br/>
+  <br/>
+	http://www.apache.org/licenses/LICENSE-2.0 <br/>
+  <br/>
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+</p>
+<h1>Components</h1>
+
+<h3>jQM theme for Windows Phone</h3>
+
+<p>jQM theme for Windows Phone is presented by jquery.mobile.wp.theme.css file and related images folder.</p>
+
+<pre><code>/themes/wp/
+</code></pre>
+
+<h3>Additional plugins</h3>
+
+<p>All additional theme plugins are located at /plugins folder</p>
+
+<pre><code>/plugins/app-bar/ - an Application Bar
+
+/plugins/date-picker/ - Apache Cordova plugin for WP that exposes the native DateTime picker
+
+/plugins/progress-bar/ - implements porgress bar control
+
+/plugins/toggle-button/ - toggle button
+</code></pre>
+
+<p>** Each plugin folder contains sample page with usage example.</p>
+
+<p>There is also special js code exporting theme switching functionality located at</p>
+
+<pre><code>/themes/themeswitcher/jquery.mobile.themeswitcher.js
+</code></pre>
+
+<h3>Apache Cordova</h3>
+
+<p>The jQM theme for Windows Phone is designed to work with Apache Cordova on Windows Phone 8 for optimal integration. This is implemented
+by the following Apache Cordova plugins.</p>
+
+<p>backButtonHandler.js - hardware back button handling functionality</p>
+
+<p>dateTimePicker.js - js bridge for Apache Cordova native DateTimePicker</p>
+
+<p>jquery.cordova.wp.themeswitcher.js - provides functionality to apply system colors (uses phoneTheme.js below)</p>
+
+<p>phoneTheme.js - js bridge for Apache Cordova system colors detection plugin</p>
+
+<h3>Samples</h3>
+
+<p>Official demo for other developers.</p>
+
+<pre><code>/samples/jqm-public-demo/index.html
+</code></pre>
+
+<p>Windows Phone application based on Apache Cordova framework to demonstrate all theme functionality (system colors, native UI elements).
+Does not contain any html pages inside, it uses absolute reference to test pages (see next section) located remotly.</p>
+
+<pre><code>/samples/WindowsPhone8/jQMThemeForWindowsPhone
+</code></pre>
+
+<h3>Test pages</h3>
+
+<p>jQuery Mobile gallery sample page (with some little modifications). Contains both html version and windows phone native application.</p>
+
+<pre><code>/tests/basic/gallery/
+</code></pre>
+
+<p>This sample page demonstrates all jQM theme for Windows Phone additional plugins/controls descibed above ('Additional plugins' section). Html only verison.</p>
+
+<pre><code>/tests/extra/all.html
+</code></pre>
+
+<p>Note. Pages above are used as a reference for Windows Phone demo application.</p>
+
+<h2>Prerequisite</h2>
+<p>The following componets are required</p>
+          <ul>
+          <li>Apache Cordova App on Windows Phone 8</li>
+          <li><a href="http://silverlight.codeplex.com/releases/view/71550#DownloadId=270984">Silverlight for Windows Phone Toolkit</a></li>
+              </ul>
+<h1>Usage</h1>
+
+<h3>To run jqmobile demo</h3>
+
+<ol>
+<li>Deploy to server the following directory (optional, you can run the demo from file system)
+/samples/jqm-public-demo/</li>
+<li>Navigate to (desktop or mobile browser)
+jqm-public-demo/index.html</li>
+</ol><h3>To run gallery test pages</h3>
+
+<ol>
+<li>Deploy to server the following directories (optional, you can run the demo from file system)
+/cordova
+/jqmobile-core
+/plugins
+/tests
+/themes</li>
+<li>Navigate to (desktop or mobile browser)
+/tests/basic/gallery/html/forms-all.html</li>
+</ol><h3>To build Windows Phone demo app</h3>
+
+<ol>
+<li>Open the following solution in Visual Studio 2012 or above
+/samples/WindowsPhone8/jQMThemeForWindowsPhone/jQMThemeForWindowsPhone.sln</li>
+<li>Update CordovaView.StartPageUri (MainPage.xaml) to reference to /tests/basic/gallery/html/forms-all.html located remotly.</li>
+<li>Build</li>
+</ol>
+<h1>Nuget packages for Visual Studio</h1>
+<h3><a href="https://www.nuget.org/packages/jQMThemeForWindowsPhone8">jQMThemeForWindowsPhone8</a></h3>
+
+<p>This nuget package allows developers to apply a Windows Phone style look and feel to Windows Phone HTML5 applications developed with Apache Cordova and jQuery Mobile on Windows Phone 8.</p>
+
+<p>To install jQMThemeForWindowsPhone8, run the following command in the Package Manager Console</p>
+
+<pre><code>
+Install-Package jQMThemeForWindowsPhone8
+</code></pre>
+<h3><a href="https://www.nuget.org/packages/jQMThemeForWindowsPhone8Lite">jQMThemeForWindowsPhone8Lite</a></h3>
+
+<p>This nuget package allows developers to apply a Windows Phone style look and feel to applications developed with 'Windows Phone HTML5 App' Visual Studio project template and jQuery Mobile on Windows Phone 8.</p>
+
+<p>To install jQMThemeForWindowsPhone8Lite, run the following command in the Package Manager Console</p>
+
+<pre><code>
+Install-Package jQMThemeForWindowsPhone8Lite
+</code></pre>
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/sgrebnov">sgrebnov</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
