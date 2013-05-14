@@ -72,9 +72,8 @@
 
        activePage = activePage || $.mobile.activePage;
 
-        // TODO - potential issue - only particular styles should be removed
         if(updateCssLink)
-            $('head').children('link').remove();
+            $('head').children('link[href*="jquery.mobile"]').remove();
 
         var csspath = 'default/jquery.mobile.css'; // original theme by default
         var theme = 'a';

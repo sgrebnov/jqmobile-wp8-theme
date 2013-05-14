@@ -96,9 +96,17 @@
 
 
     <script type="text/javascript">
+        $.mobile.pushStateEnabled = false;
         var absoluteUrl = window.location.href;
         $.themesDir = absoluteUrl.substring(0, absoluteUrl.lastIndexOf('/')) + '/css/';
-
+        
+        $(document).bind('pagebeforeshow', function(){
+            $("a[rel='external']").bind('click', function(event){
+                window.open(event.target.href, '_system', 'location=yes');
+                return false;
+            });
+        })
+        
         $().ready( function() {
             if ((typeof window.external.Notify == "undefined") || !$.browser.msie || parseInt($.browser.version) < 10) {
                 $("#noteWP8Required").show();
@@ -128,8 +136,8 @@
             <h2>Welcome</h2>
 
             <p style="font-weight: bold">This theme provides a Windows Phone user interface for Apache Cordova apps using jQuery Mobile on Windows Phone 8.</p>
-            <p>While the theme itself adds all wndows phone specific colors
-                and fonts by default, please don't forget to follow <a href="http://msdn.microsoft.com/en-us/library/hh202915(v=VS.92).aspx">user experience design guidelines</a>.</p>
+            <p>While the theme itself adds all windows phone specific colors
+                and fonts by default, please don't forget to follow <a href="http://msdn.microsoft.com/en-us/library/windowsphone/design/hh202915%28v=vs.105%29.aspx" rel="external">user experience design guidelines</a>.</p>
 
             <p id="noteWP8Required" style="display: none">To view DateTime picker and Theme Switcher plugins of the jQM theme for Windows Phone, please view from within an Apache Cordova app in Windows Phone 8.</p>
             <h2>Browse</h2>
