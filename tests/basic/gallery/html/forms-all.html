@@ -13,6 +13,21 @@
     <!--[if lte IE 9]>
     <link rel="stylesheet"  href="../../../../jqmobile-core/jquery.mobile.fixedToolbar.polyfill.css" />
     <![endif]-->
+
+    <style>
+        @media screen and (orientation: portrait) {
+            @-ms-viewport {
+                width: 320px;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            @-ms-viewport {
+                width: 480px;
+            }
+        }
+    </style>
+
 	<script src="../../../../jqmobile-core/jquery.js"></script>
     <script src="../../../../themes/wp/jquery.mobile.wp.theme.init.js"></script>
 	<script src="../../../../jqmobile-core/jquery.mobile.js"></script>
