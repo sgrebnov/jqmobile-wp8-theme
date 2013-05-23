@@ -17,6 +17,8 @@ cordova.addConstructor(function () {
 
                 // based on http://stackoverflow.com/questions/8656801/how-to-change-theme-dynamically-in-jquery-mobile
 
+                $.mobile.activePage.jqmData('theme', themeSwatch);
+                
                 $('body')
                     .removeClass('ui-overlay-a ui-overlay-b ui-overlay-c ui-overlay-d ui-overlay-e')
                     .addClass('ui-overlay-' + themeSwatch);

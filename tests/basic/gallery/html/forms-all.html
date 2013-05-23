@@ -65,6 +65,12 @@ if (typeof window.external.Notify !== "undefined") {
 	(head || document.body).appendChild(sc3);
 }
 
+$().ready( function() {
+    $("form").submit(function(e){
+        e.preventDefault();
+    });
+});
+
 </script>
 
 </head>
@@ -85,7 +91,7 @@ if (typeof window.external.Notify !== "undefined") {
 
 		<div id="jqm-themeswitcher"></div>
 
-		<form action="#" method="get">
+		<form data-ajax="false">
 
 			<h2>Form elements</h2>
 
