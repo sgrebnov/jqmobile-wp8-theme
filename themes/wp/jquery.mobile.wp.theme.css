@@ -90,14 +90,14 @@ body.ui-overlay-a {
 .ui-bar-a {
     background: 			black /*{a-bar-background-color}*/;
     color: 					white /*{a-bar-color}*/;
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif;
 }
 .ui-bar-a,
 .ui-bar-a input,
 .ui-bar-a select,
 .ui-bar-a textarea,
 .ui-bar-a button {
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif /*{global-font-family}*/;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif /*{global-font-family}*/;
 }
 
 .ui-bar-a .ui-link-inherit {
@@ -317,14 +317,14 @@ body.ui-overlay-b{
 .ui-bar-b {
     background: 			white /*{a-bar-background-color}*/;
     color: 					black /*{a-bar-color}*/;
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif;
 }
 .ui-bar-b,
 .ui-bar-b input,
 .ui-bar-b select,
 .ui-bar-b textarea,
 .ui-bar-b button {
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif /*{global-font-family}*/;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif /*{global-font-family}*/;
 }
 .ui-bar-b .ui-link-inherit {
     color: 	#fff /*{b-bar-color}*/;
@@ -549,14 +549,14 @@ body.ui-overlay-c {
 .ui-bar-c {
     background: 			black /*{a-bar-background-color}*/;
     color: 					white /*{a-bar-color}*/;
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif;
 }
 .ui-bar-c,
 .ui-bar-c input,
 .ui-bar-c select,
 .ui-bar-c textarea,
 .ui-bar-c button {
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif /*{global-font-family}*/;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif /*{global-font-family}*/;
 }
 
 .ui-bar-c .ui-link-inherit {
@@ -741,14 +741,14 @@ body.ui-overlay-d{
 .ui-bar-d {
     background: 			white /*{a-bar-background-color}*/;
     color: 					black /*{a-bar-color}*/;
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif;
 }
 .ui-bar-d,
 .ui-bar-d input,
 .ui-bar-d select,
 .ui-bar-d textarea,
 .ui-bar-d button {
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif /*{global-font-family}*/;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif /*{global-font-family}*/;
 }
 .ui-bar-d .ui-link-inherit {
     color: 	#fff /*{b-bar-color}*/;
@@ -1036,7 +1036,7 @@ Footer
 
 .ui-body-a, .ui-body-b,
 input, select, textarea, button {
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif /*{global-font-family}*/;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif /*{global-font-family}*/;
     font-size: 11pt; /* PhoneFontSizeNormal */
 }
 
@@ -1097,7 +1097,7 @@ a.ui-link-inherit {
     color: 					#fff /*{global-active-color}*/;
     cursor: pointer;
     text-decoration: none;
-    font-family: Segoe WP, Segoe UI, Helvetica, san-serif /*{global-font-family}*/;
+    font-family: Segoe WP, Segoe UI, Helvetica, sans-serif /*{global-font-family}*/;
 }
 .ui-btn-active a.ui-link-inherit {
     color: 					#1BA1E2 /*{global-active-color}*/;
@@ -2873,7 +2873,7 @@ Dialog box
 
 .ui-dialog .ui-header .ui-title{
     font-size: 12pt;
-    font-family: Segoe WP, Segoe UI Light, Helvetica, san-serif;
+    font-family: Segoe WP, Segoe UI Light, Helvetica, sans-serif;
     font-weight: bold;
     margin: 15px 0px 5px 15px;
     position: relative;
@@ -2996,7 +2996,7 @@ Dropbox
     border: 2px solid #808080;
 }
 
-/* Fixes #2588 — When Windows Phone 7.5 (Mango) tries to calculate a numeric opacity for a select—including “inherit�?—without explicitly specifying an opacity on the parent to give it context, a bug appears where clicking elsewhere on the page after opening the select will open the select again. */
+/* Fixes #2588 — When Windows Phone 7.5 (Mango) tries to calculate a numeric opacity for a select—including “inherit??—without explicitly specifying an opacity on the parent to give it context, a bug appears where clicking elsewhere on the page after opening the select will open the select again. */
 .ui-select .ui-btn select { cursor: pointer; left: 0; top:0; width: 100%;  min-height: 1.5em; min-height: 100%; height: 3em; max-height: 100%; opacity: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); z-index: 2; }
 
 .ui-select .ui-disabled { opacity: 1; }
