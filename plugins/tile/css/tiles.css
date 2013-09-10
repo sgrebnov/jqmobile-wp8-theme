@@ -13,6 +13,9 @@
 .violet {
     background-color: rgb(97,61,188) !important;
 }
+.orange {
+    background-color: rgb(211,72,38) !important;
+}
 
 .links-container {
     display: -ms-flexbox;
@@ -40,7 +43,7 @@
    height: 60px;
 }
 
-.square .button {
+.square-link-part-tiles .button {
     height: 130px;
 }
 
@@ -59,16 +62,22 @@
     margin-left: 4px;
     color: white;
     font-size: 14px;
-    top: 10%;
+    top: 5%;
     position: relative;
 }
 
 .menu-icon img {
     position: relative;
     margin-top: 20%;
-    left: 22%;
+    
+}
+.square-link-part-tiles .menu-icon img {
+    left:30%;
+    height:50px;
 }
 
 .small-tile-button .menu-icon img {
     height: 34px;
+    left: 21%;
+    top:-5px;
 }
