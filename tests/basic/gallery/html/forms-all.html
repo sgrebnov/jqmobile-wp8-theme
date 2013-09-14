@@ -10,6 +10,7 @@
 	-->
 
 	<link rel="stylesheet"  href="../../../../themes/wp/jquery.mobile.wp.theme.css" />
+    <link href="../../../../plugins/tile/css/tiles.css" rel="stylesheet" />
     <!--[if lte IE 9]>
     <link rel="stylesheet"  href="../../../../jqmobile-core/jquery.mobile.fixedToolbar.polyfill.css" />
     <![endif]-->
@@ -503,7 +504,52 @@ $().ready( function() {
         
 	</form>
 	</div><!--/content-primary -->		
+        <div id="tiles">
+            <h2>Windows 8 Tiles</h2>
+             <div class="links-container">
 
+                <div class="link-part square-link-part-tiles red">
+                        <a href="#" class="button" data-role="none">
+                            <div class="menu-icon">
+                                <img src="Images/tiles/Phone.png" />
+                            </div>
+                            <div class="menu-text" data-loc ="notification">Phone</div>
+                        </a>
+                    </div>
+                <div class="small-tiles-container">
+                    <div class="link-part small-link-part-tiles green">
+                        <a class="button small-tile-button" href="#" data-role="none">
+                            <div class="menu-icon">
+                                <img src="Images/tiles/Windows%208.png" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="link-part small-link-part-tiles blue">
+                        <a class="button small-tile-button" href="#" data-role="none">
+                            <div class="menu-icon">
+                                <img src="Images/tiles/ContactBook.png" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="link-part small-link-part-tiles orange" id="dvIndexChildSelectorBtn">
+                        <a class="button small-tile-button" href="#" data-role="none">
+                            <div class="menu-icon">
+                                <img src="Images/tiles/SMS.png" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="link-part small-link-part-tiles violet">
+                        <a class="button small-tile-button" href="#" data-role="none">
+                            <div class="menu-icon">
+                                <img src="Images/tiles/Hotmail.png" />
+                            </div>
+                        </a>
+                    </div>
+                 </div>
+                
+
+             </div>
+        </div>
 </div><!-- /content -->
 
 <div data-role="footer" data-position="fixed" data-tap-toggle="false">

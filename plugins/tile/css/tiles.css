@@ -1,0 +1,83 @@
+﻿.red {
+    background-color: rgb(230,0,0) !important;
+}
+
+.blue {
+    background-color: rgb(9,78,183) !important;
+}
+
+.green {
+    background-color: rgb(0,156,0) !important;
+}
+
+.violet {
+    background-color: rgb(97,61,188) !important;
+}
+.orange {
+    background-color: rgb(211,72,38) !important;
+}
+
+.links-container {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: row;
+    -ms-flex-pack: start;
+}
+
+.small-link-part-tiles {
+    width: 60px !important;
+}
+
+.small-tile-button {
+    height: 60px !important;
+}
+
+.link-part {
+    margin-right: 7px;
+    margin-top: 7px;
+    width: 130px;
+}
+
+.link-part .button {
+   background: rgb(230,0,0);
+   height: 60px;
+}
+
+.square-link-part-tiles .button {
+    height: 130px;
+}
+
+.small-tiles-container {
+    display: -ms-flexbox;
+    -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: row;
+    width: 135px;
+    margin-left: 10px;
+}
+
+.menu-text {
+    float: left;
+    clear: both;
+    margin-left: 4px;
+    color: white;
+    font-size: 14px;
+    top: 5%;
+    position: relative;
+}
+
+.menu-icon img {
+    position: relative;
+    margin-top: 20%;
+    
+}
+.square-link-part-tiles .menu-icon img {
+    left:30%;
+    height:50px;
+}
+
+.small-tile-button .menu-icon img {
+    height: 34px;
+    left: 21%;
+    top:-5px;
+}
